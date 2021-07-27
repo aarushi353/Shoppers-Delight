@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+.Landing{
+    background: #212529;
+}
+img{
+    width: 40%;
+    height: 30%;
+}
+p{
+    color: white;
+    font-size: 300%;
+    font-family: 'Merienda', cursive;
+    padding-top: 3%;
+}
