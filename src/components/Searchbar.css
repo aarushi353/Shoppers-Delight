@@ -7,7 +7,8 @@
 form {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  width: 80%;
+  
 }
 
 form > input {
@@ -29,5 +30,5 @@ input {
 input[type="submit"] {
   background: #5455d7;
   color: white;
-
 }
+
