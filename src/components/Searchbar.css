@@ -1,0 +1,33 @@
+.search {
+  background: #212529;
+  display: grid;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+form > input {
+  flex: 1 1 10ch;
+  margin: 0.5rem;
+}
+
+form > input[type="email"] {
+  flex: 3 1 30ch;
+}
+
+input {
+  border: none;
+  background: hsl(0, 0%, 93%);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+}
+
+input[type="submit"] {
+  background: #5455d7;
+  color: white;
+
+}
