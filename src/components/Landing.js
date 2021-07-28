@@ -5,6 +5,7 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import Item from "./Item";
 import SearchBar from "./SearchBar.js";
 import TopProducts from './TopProducts.js';
+import { Row, Col } from 'react-bootstrap';
 function LandingPage() {
   return (
     <div className="Landing">
@@ -27,15 +28,20 @@ function LandingPage() {
         </p>
       </center>
       <div className="top-products">
+        <Row>
+
       {TopProducts.map((product)=>{
-           return <Item
+        return <Col key={product.id} sm={12} md={6} lg={4} xl={3}>
+            <Item
            title={product.title}
            image={product.image}
            sellingamount={product.sellingamount}
            actualprice={product.actualprice}
            discount={product.discount}
-           description={product.description}
-          />})}
+           description={product.description} />
+           </Col>
+          })}
+          </Row>
       </div>
     </div>
   );
