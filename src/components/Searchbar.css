@@ -3,14 +3,10 @@
   display: grid;
   align-items: center;
 }
-.searchform{
+.searchform {
   display: flex;
   flex: wrap;
-}
-form {
-
-  width: 80%;
-  
+  /* width: 60%; */
 }
 
 form > input {
@@ -33,4 +29,3 @@ input[type="submit"] {
   background: #5455d7;
   color: white;
 }
-

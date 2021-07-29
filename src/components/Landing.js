@@ -6,7 +6,6 @@ import Item from "./Item";
 import SearchBar from "./SearchBar.js";
 import TopProducts from "./TopProducts.js";
 import { Row, Col } from "react-bootstrap";
-import Footer from "./Footer";
 function LandingPage() {
   return (
     <div className="Landing">
@@ -46,7 +45,6 @@ function LandingPage() {
           })}
         </Row>
       </div>
-      <Footer />
     </div>
   );
 }

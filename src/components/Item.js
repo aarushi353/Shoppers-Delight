@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 import Button from "./Button.js";
 function Item(props) {
   return (
-    <Card style={{ width: "20rem" }} className="my-3 p-3">
+    <Card style={{ width: 300 }} className="my-3 p-3">
       <Card.Img variant="top" src={props.image} />
       <Card.Body>
         <Card.Title> {props.title} </Card.Title>
@@ -13,7 +13,7 @@ function Item(props) {
           <span style={{ color: "green" }}> {props.discount} % Off</span>{" "}
         </Card.Title>
         <center>
-          <Button>Add to Cart</Button>
+          <Button text="Add to Cart" />
         </center>
       </Card.Body>
     </Card>
