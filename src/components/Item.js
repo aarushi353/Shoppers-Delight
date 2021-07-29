@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import Button from "./Button.js";
+import ButtonProduct from "./ButtonProduct.js";
 function Item(props) {
   return (
     <Card style={{ width: 300 }} className="my-3 p-3">
@@ -13,7 +13,7 @@ function Item(props) {
           <span style={{ color: "green" }}> {props.discount} % Off</span>{" "}
         </Card.Title>
         <center>
-          <Button text="Add to Cart" />
+          <ButtonProduct text="Add to Cart" />
         </center>
       </Card.Body>
     </Card>
