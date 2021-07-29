@@ -11,7 +11,7 @@ import Admin from "./pages/Admin";
 import Signup from "./pages/SignUp";
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header />
       <Switch>
         <Route path="/" exact>
@@ -39,6 +39,7 @@ function App() {
           <Admin />
         </Route>
       </Switch>
+
     </div>
   );
 }

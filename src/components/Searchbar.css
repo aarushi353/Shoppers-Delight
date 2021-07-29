@@ -3,10 +3,12 @@
   display: grid;
   align-items: center;
 }
-
-form {
+.searchform{
   display: flex;
-  flex-wrap: wrap;
+  flex: wrap;
+}
+form {
+
   width: 80%;
   
 }
