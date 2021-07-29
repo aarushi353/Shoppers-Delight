@@ -4,7 +4,10 @@ import { Form } from "react-bootstrap";
 function LoginForm() {
   return (
     <center><div className="Login">
-      <Form style={{marginTop:120}}>
+      <p className="para" style={{marginBottom: 20,marginTop: 40}}>
+        <strong> Log In</strong>
+      </p>
+        <Form style={{ marginTop: 20 }} className="Loginform">
         <Form.Group  controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" style={{width:270}} />
@@ -14,7 +17,7 @@ function LoginForm() {
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" style={{width:270}} />
         </Form.Group>
-        <Button type="submit" text="Login" />
+        <Button type="submit" text="Login"  />
 
       </Form>
     </div></center>

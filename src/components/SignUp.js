@@ -5,8 +5,12 @@ import "./SignUp.css";
 function SignUp() {
   return (
     <center>
+
       <div className="Signup">
-        <Form style={{ marginTop: 120 }}>
+      <p className="para" style={{marginBottom: 20,marginTop: 40}}>
+        <strong> Sign Up</strong>
+      </p>
+        <Form style={{ marginTop: 70 }}>
           <Form.Control
             className="mb-3"
             placeholder="First name"
