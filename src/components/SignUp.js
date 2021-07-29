@@ -14,7 +14,7 @@ function SignUp() {
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Control type="password" placeholder="Password" style={{width:270}} />
         </Form.Group>
-        <Button type="submit" text="Login" />
+        <Button type="submit" text="SignUp" />
 
       </Form>
     </div></center>
