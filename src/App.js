@@ -9,6 +9,9 @@ import Checkout from "./pages/CheckOut";
 import Login from "./pages/Login";
 import Adminpage from "./pages/Adminpage";
 import Signup from "./pages/SignUp";
+import Orders from "./pages/Orders";
+import Users from "./pages/Users";
+
 function App() {
   return (
     <div className="App">
@@ -39,10 +42,10 @@ function App() {
           <Adminpage />
         </Route>
         <Route path="/Orders">
-          <Adminpage />
+          <Orders />
         </Route>
         <Route path="/Users">
-          <Adminpage />
+          <Users />
         </Route>
       </Switch>
     </div>
