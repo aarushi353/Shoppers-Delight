@@ -1,18 +1,21 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Nav, Navbar, Container } from "react-bootstrap";
-
+import "./Header.css";
 function Header() {
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/"><strong>ShoppersDelight</strong></Navbar.Brand>
+          <Navbar.Brand href="/">
+            <strong>ShoppersDelight</strong>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/Products">Products</Nav.Link>
-              <Nav.Link href="/Cart">Cart</Nav.Link>
+              <Nav.Link href="/Products" className="product">Products</Nav.Link>
+              <Nav.Link href="/Cart">Cart{" "}
+              <span className="badge">0</span></Nav.Link>
             </Nav>
 
             <Nav>
@@ -24,7 +27,6 @@ function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
     </div>
   );
 }

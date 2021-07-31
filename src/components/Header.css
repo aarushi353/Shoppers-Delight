@@ -1,0 +1,16 @@
+.badge {
+  background-color: #2b2b2b;
+  color: white;
+  border-radius: 9px;
+  font-size: medium;
+  margin-top: 10%;
+}
+
+.product {
+  margin-top: 4.5%;
+}
+@media (max-width: 991px) {
+.badge {
+    margin-top: 0%;
+  }
+}
