@@ -7,7 +7,7 @@ import Product from "./pages/Products";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/CheckOut";
 import Login from "./pages/Login";
-import Admin from "./pages/Admin";
+import Adminpage from "./pages/Adminpage";
 import Signup from "./pages/SignUp";
 function App() {
   return (
@@ -36,10 +36,9 @@ function App() {
           <Signup />
         </Route>
         <Route path="/Admin" exact>
-          <Admin />
+          <Adminpage />
         </Route>
       </Switch>
-
     </div>
   );
 }

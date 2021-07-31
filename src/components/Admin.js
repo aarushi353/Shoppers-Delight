@@ -1,43 +1,47 @@
 import React from "react";
-import Button from "./Button";
 import { Form } from "react-bootstrap";
-
-function SignUp() {
+import Button from "./Button";
+function Admin() {
   return (
     <center>
-      <div className="Signup">
+      <div>
         <p className="para" style={{ marginBottom: 20, marginTop: 40 }}>
-          <strong> Sign Up</strong>
+          <strong>Add Your Product!</strong>
         </p>
         <Form style={{ marginTop: 70 }}>
           <Form.Control
             className="mb-3"
-            placeholder="First name"
+            placeholder="Name"
             style={{ width: 270 }}
           />
           <Form.Control
             className="mb-3"
-            placeholder="Last name"
+            placeholder="Actual Amount"
             style={{ width: 270 }}
           />
           <Form.Control
             className="mb-3"
-            controlId="formBasicEmail"
-            type="email"
-            placeholder="Enter email"
+            placeholder="Discount(In %)"
             style={{ width: 270 }}
           />
           <Form.Control
-            className="mb-3"
-            controlId="formBasicPassword"
-            type="password"
-            placeholder="Password"
+            as="textarea"
+            rows={2}
             style={{ width: 270 }}
+            className="mb-3"
+            placeholder="Description"
           />
-          <Button type="submit" text="SignUp" />
+          <Form.Control
+            type="file"
+            style={{ width: 270 }}
+            className="mb-3"
+            placeholder="Image File"
+          />
+          <Button type="submit" text="Add" />
         </Form>
       </div>
     </center>
   );
 }
-export default SignUp;
+
+export default Admin;
