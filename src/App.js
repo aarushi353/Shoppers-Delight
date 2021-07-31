@@ -17,25 +17,31 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/Search" exact>
+        <Route path="/Search">
           <Search />
         </Route>
         <Route path="/Products" exact>
           <Product />
         </Route>
-        <Route path="/Cart" exact>
+        <Route path="/Cart">
           <Cart />
         </Route>
-        <Route path="/Checkout" exact>
+        <Route path="/Checkout">
           <Checkout />
         </Route>
-        <Route path="/Login" exact>
+        <Route path="/Login">
           <Login />
         </Route>
-        <Route path="/Signup" exact>
+        <Route path="/Signup">
           <Signup />
         </Route>
-        <Route path="/Admin" exact>
+        <Route path="/Admin">
+          <Adminpage />
+        </Route>
+        <Route path="/Orders">
+          <Adminpage />
+        </Route>
+        <Route path="/Users">
           <Adminpage />
         </Route>
       </Switch>
