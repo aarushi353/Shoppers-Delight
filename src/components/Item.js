@@ -35,12 +35,10 @@ function Item(props) {
           <span style={{ color: "green" }}> {props.discount} % Off</span>{" "}
         </Card.Title>
         <center>
-          <button
-            onClick={CartStatusHandler}
+          <ButtonProduct
+            CartStatusHandler={CartStatusHandler}
             text={itemIsAddedToCart ? "Remove from Cart" : "Add to Cart"}
-          >
-            add to cart
-          </button>
+          />
 
         </center>
       </Card.Body>
