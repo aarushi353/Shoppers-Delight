@@ -19,7 +19,6 @@ function App() {
 
   const [CartItems, setCartItems] = useState([]);
   function addProductHandler(addedToCart) {
-    console.log("added")
     setCartItems((prevCartProducts) => {
       return prevCartProducts.concat(addedToCart);
     });

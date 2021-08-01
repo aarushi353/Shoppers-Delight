@@ -5,14 +5,11 @@ import { useContext } from "react";
 import {CartProduct} from "../App";
 function Item(props) {
   const cartProduct = useContext(CartProduct);
-  console.log(props.id)
   const itemIsAddedToCart = cartProduct.itemIsAddedToCart(props.id);
   function CartStatusHandler() {
     if (itemIsAddedToCart) {
-      console.log("remove")
       cartProduct.removeCart(props.id);
     } else {
-      console.log("add")
       cartProduct.addToCart({
         id: props.id,
         title: props.title,

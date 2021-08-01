@@ -7,7 +7,6 @@ import {CartProduct} from '../App'
 
 function Header() {
   const cartProduct = useContext(CartProduct);
-  console.log(cartProduct)
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
