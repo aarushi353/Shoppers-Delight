@@ -3,9 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import "./Header.css";
 import { useContext } from "react";
-import CartProduct from "./cartContext";
+import {CartProduct} from '../App'
+
 function Header() {
   const cartProduct = useContext(CartProduct);
+  console.log(cartProduct)
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">

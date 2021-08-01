@@ -2,14 +2,17 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import ButtonProduct from "./ButtonProduct.js";
 import { useContext } from "react";
-import CartProduct from "./cartContext";
+import {CartProduct} from "../App";
 function Item(props) {
   const cartProduct = useContext(CartProduct);
+  console.log(props.id)
   const itemIsAddedToCart = cartProduct.itemIsAddedToCart(props.id);
   function CartStatusHandler() {
     if (itemIsAddedToCart) {
+      console.log("remove")
       cartProduct.removeCart(props.id);
     } else {
+      console.log("add")
       cartProduct.addToCart({
         id: props.id,
         title: props.title,
@@ -32,10 +35,13 @@ function Item(props) {
           <span style={{ color: "green" }}> {props.discount} % Off</span>{" "}
         </Card.Title>
         <center>
-          <ButtonProduct
+          <button
             onClick={CartStatusHandler}
             text={itemIsAddedToCart ? "Remove from Cart" : "Add to Cart"}
-          />
+          >
+            add to cart
+          </button>
+
         </center>
       </Card.Body>
     </Card>
