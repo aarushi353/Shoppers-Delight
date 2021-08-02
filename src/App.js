@@ -58,9 +58,6 @@ function App() {
           <Route path="/Cart">
             <Cart />
           </Route>
-          <Route path="/Checkout">
-            <Checkout />
-          </Route>
           <Route path="/Login">
             <Login />
           </Route>
@@ -81,5 +78,5 @@ function App() {
     </CartProduct.Provider>
   );
 }
-
+export const contextTemplete={};
 export default App;
