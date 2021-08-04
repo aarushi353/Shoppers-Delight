@@ -1,10 +1,9 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Nav, Navbar, Container } from "react-bootstrap";
-import "./Header.css";
 import { useContext } from "react";
 import {CartProduct} from '../App'
-
+import { Nav, Navbar, Container } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Header.css";
 function Header() {
   const cartProduct = useContext(CartProduct);
   return (

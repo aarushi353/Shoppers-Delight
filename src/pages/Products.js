@@ -1,12 +1,12 @@
-import React from 'react';
-import SearchBar from '../components/SearchBar';
-function Product(){
-return(
+import React from "react";
+import SearchBar from "../components/SearchBar";
+function Product() {
+  return (
     <div>
-        <SearchBar />
-        Products
+      <SearchBar />
+      Products
     </div>
-)
+  );
 }
 
 export default Product;

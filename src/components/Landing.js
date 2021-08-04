@@ -1,11 +1,11 @@
 import React from "react";
-import "./Landing.css";
+import { Row, Col } from "react-bootstrap";
 import image from "../assets/images/landing.png";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import Item from "./Item";
 import SearchBar from "./SearchBar.js";
 import TopProducts from "./TopProducts.js";
-import { Row, Col } from "react-bootstrap";
+import "./Landing.css";
 function LandingPage() {
   return (
     <div className="Landing">

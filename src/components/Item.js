@@ -1,8 +1,8 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import ButtonProduct from "./ButtonProduct.js";
 import { useContext } from "react";
-import {CartProduct} from "../App";
+import { CartProduct } from "../App";
+import ButtonProduct from "./ButtonProduct.js";
 function Item(props) {
   const cartProduct = useContext(CartProduct);
   const itemIsAddedToCart = cartProduct.itemIsAddedToCart(props.id);
@@ -36,7 +36,6 @@ function Item(props) {
             CartStatusHandler={CartStatusHandler}
             text={itemIsAddedToCart ? "Remove from Cart" : "Add to Cart"}
           />
-
         </center>
       </Card.Body>
     </Card>

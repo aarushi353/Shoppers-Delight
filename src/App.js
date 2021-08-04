@@ -1,5 +1,6 @@
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
+import { useState, createContext } from "react";
 import Header from "./components/Header";
 import Home from "./pages/LandingPage";
 import Search from "./pages/Search";
@@ -10,12 +11,10 @@ import Adminpage from "./pages/Adminpage";
 import Signup from "./pages/SignUp";
 import Orders from "./pages/Orders";
 import Users from "./pages/Users";
-import { useState,createContext, } from "react";
 
 export const CartProduct = createContext();
 
 function App() {
-
   const [CartItems, setCartItems] = useState([]);
   function addProductHandler(addedToCart) {
     setCartItems((prevCartProducts) => {
@@ -38,7 +37,6 @@ function App() {
     removeCart: removeProductHandler,
     itemIsAddedToCart: itemIsAddedToCartHandler,
   };
-
 
   return (
     <CartProduct.Provider value={contextTemplete}>
@@ -77,5 +75,5 @@ function App() {
     </CartProduct.Provider>
   );
 }
-export const contextTemplete={};
+export const contextTemplete = {};
 export default App;

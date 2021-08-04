@@ -1,9 +1,8 @@
 import React from 'react';
-import './Button.css';
+import './Buttons.css';
 function Button(props){
     return(
         <button className="button">{props.text}</button>
-        // onSubmit={submitHandler}
     )
 }
 

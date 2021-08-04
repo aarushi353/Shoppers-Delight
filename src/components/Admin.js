@@ -1,32 +1,7 @@
 import React from "react";
 import { Form } from "react-bootstrap";
 import Button from "./Button";
-// import { useRef } from "react";
 function Admin() {
-  //props
-  // const titleInputRef = useRef();
-  // const actualamountInputRef = useRef();
-  // const imageInputRef = useRef();
-  // const discountInputRef = useRef();
-  // const descriptionInputRef = useRef();
-
-  // function submitHandler(event){
-  // event.preventDefault();
-  // const enteredTitle = titleInputRef.current.value;
-  // const enteredactualAmount = actualamountInputRef.current.value;
-  // const enteredImage = imageInputRef.current.value;
-  // const enteredDiscount = discountInputRef.current.value;
-  // const enteredDescription = descriptionInputRef.current.value;
-  // }
-  // const productData = {
-  //   title: enteredTitle,
-  //   actualamount: enteredactualAmount,
-  //   image: enteredImage,
-  //   discount: enteredDiscount,
-  //   description: enteredDescription,
-  // };
-
-  // props.onAddProduct(productData);
   return (
     <center>
       <div>
@@ -38,7 +13,6 @@ function Admin() {
             className="mb-3"
             placeholder="Title"
             style={{ width: 270 }}
-            // ref={titleInputRef}
             required
             id="title"
           />
@@ -46,7 +20,6 @@ function Admin() {
             className="mb-3"
             placeholder="Actual Amount"
             style={{ width: 270 }}
-            // ref={actualamountInputRef}
             required
             id="actualamount"
           />
@@ -54,7 +27,6 @@ function Admin() {
             className="mb-3"
             placeholder="Discount(In %)"
             style={{ width: 270 }}
-            // ref={discountInputRef}
             required
             id="discount"
           />
@@ -64,7 +36,6 @@ function Admin() {
             style={{ width: 270 }}
             className="mb-3"
             placeholder="Description"
-            // ref={descriptionInputRef}
             required
             id="description"
           />
@@ -73,12 +44,10 @@ function Admin() {
             style={{ width: 270 }}
             className="mb-3"
             placeholder="Image File"
-            // ref={imageInputRef}
             required
             id="image"
           />
           <Button type="submit" text="Add"  />
-
         </Form>
       </div>
     </center>
@@ -86,4 +55,3 @@ function Admin() {
 }
 
 export default Admin;
-          //submitHandler={submitHandler}
