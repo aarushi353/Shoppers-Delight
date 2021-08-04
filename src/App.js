@@ -5,7 +5,6 @@ import Home from "./pages/LandingPage";
 import Search from "./pages/Search";
 import Product from "./pages/Products";
 import Cart from "./pages/Cart";
-import Checkout from "./pages/CheckOut";
 import Login from "./pages/Login";
 import Adminpage from "./pages/Adminpage";
 import Signup from "./pages/SignUp";
