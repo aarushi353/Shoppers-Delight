@@ -9,7 +9,8 @@ import {
 } from "@material-ui/core";
 import { useForm, FormProvider } from "react-hook-form";
 import FormInput from "./CustomTextField";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+
 const AddressForm = () => {
   const methods = useForm();
 
@@ -29,9 +30,13 @@ const AddressForm = () => {
             <FormInput required name="zip" label="ZIP / Postal Code" />
           </Grid>
           <br />
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <Button component={Link} variant="outlined" to="/Cart">Back to Cart</Button>
-            <Button type="submit" variant="contained" color="primary">Next</Button>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <Button component={Link} variant="outlined" to="/Cart">
+              Back to Cart
+            </Button>
+            <Button type="submit" variant="contained" color="primary">
+              Next
+            </Button>
           </div>
         </form>
       </FormProvider>

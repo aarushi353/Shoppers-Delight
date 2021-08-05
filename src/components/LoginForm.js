@@ -1,6 +1,6 @@
 import React from "react";
 import { Form } from "react-bootstrap";
-import Button from "../components/Button";
+import "./Buttons.css";
 
 function LoginForm() {
   return (
@@ -15,6 +15,7 @@ function LoginForm() {
             <Form.Control
               type="email"
               placeholder="Enter email"
+              required
               style={{ width: 270 }}
             />
           </Form.Group>
@@ -24,10 +25,13 @@ function LoginForm() {
             <Form.Control
               type="password"
               placeholder="Password"
+              required
               style={{ width: 270 }}
             />
           </Form.Group>
-          <Button type="submit" text="Login" />
+          <button type="submit" className="button">
+            Log In
+          </button>
         </Form>
       </div>
     </center>

@@ -6,7 +6,7 @@ import {
   StepLabel,
   Typography,
 } from "@material-ui/core";
-import useStyles from "./Styles";
+import useStyles from "./Styles_Form";
 import AddressForm from "./AddressForm";
 import PaymentForm from "./PaymentForm";
 const steps = ["Shipping Address", "Payment details"];

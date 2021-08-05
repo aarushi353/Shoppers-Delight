@@ -1,6 +1,6 @@
 import React from "react";
 import { Form } from "react-bootstrap";
-import Button from "./Button";
+import "./Buttons.css";
 function Admin() {
   return (
     <center>
@@ -47,7 +47,9 @@ function Admin() {
             required
             id="image"
           />
-          <Button type="submit" text="Add"  />
+          <button type="submit" className="button">
+            Add Product
+          </button>
         </Form>
       </div>
     </center>

@@ -1,6 +1,6 @@
 const TopProducts = [
   {
-    id: "1",
+    id: "21",
     image:
       "https://rukminim1.flixcart.com/image/416/416/kjlrb0w0/computer/a/k/b/asus-original-imafz522ntfk9hwx.jpeg?q=70",
     title: "ASUS VivoBook",
@@ -11,7 +11,7 @@ const TopProducts = [
       "15 Core i5 10th Gen-(8 GB/1 TB HDD/15.6 inch, Transparent Silver)",
   },
   {
-    id: "2",
+    id: "22",
     image:
       "https://rukminim1.flixcart.com/image/416/416/camera/y/x/b/sony-cyber-shot-dsc-w800-point-shoot-original-imadvgz7tgqw8gw8.jpeg?q=70",
     title: "SONY CyberShot",
@@ -22,7 +22,7 @@ const TopProducts = [
       "DSC-W800/BC IN5 (20.1 MP, 5 Optical Zoom, 13x Digital Zoom, Black)",
   },
   {
-    id: "3",
+    id: "23",
     image:
       "https://rukminim1.flixcart.com/image/880/1056/k7xnukw0/watch/g/s/t/nbth1791464-tommy-hilfiger-original-imafq24yyenfsggk.jpeg?q=50",
     title: "Analog Watch",
@@ -32,7 +32,7 @@ const TopProducts = [
     description: "TOMMY HILFIGER,TH1791381W Analog Watch - For Men",
   },
   {
-    id: "4",
+    id: "24",
     image:
       "https://rukminim1.flixcart.com/image/880/1056/kqttg280/t-shirt/3/x/d/m-meppcn012b-metronaut-original-imag4rcnzfqynhs6.jpeg?q=50",
     title: "Black T-Shirt",
@@ -42,7 +42,7 @@ const TopProducts = [
     description: "METRONAUT, Graphic Print Men Round Neck Black T-Shirt",
   },
   {
-    id: "5",
+    id: "25",
     image:
       "https://rukminim1.flixcart.com/image/416/416/k9stjm80/headphone/e/o/f/rockerz-450-boat-original-imafrgfsan7mpvdf.jpeg?q=70",
     title: "boAt Rockerz",
@@ -53,7 +53,7 @@ const TopProducts = [
       "boAt Rockerz 450 Bluetooth Headset  (Luscious Black, On the Ear)",
   },
   {
-    id: "6",
+    id: "26",
     image:
       "https://rukminim1.flixcart.com/image/880/1056/kiew3gw0-0/t-shirt/t/q/1/xs-dowmn035lylw-difference-of-opinion-original-imafy7jzmeh8yduw.jpeg?q=50",
     title: "T-Shirt",
@@ -63,10 +63,10 @@ const TopProducts = [
     description: "Printed Women Round Neck Yellow T-Shirt For Woman",
   },
   {
-    id: "7",
+    id: "27",
     image:
       "https://rukminim1.flixcart.com/image/580/696/knunf680/t-shirt/u/c/f/s-crp-nvr-viral-trend-original-imag2gy84dsejzax.jpeg?q=50",
-    title: "T-Shirt",
+    title: "H&M",
     sellingamount: 975,
     actualprice: 1500,
     discount: 55,
@@ -77,11 +77,11 @@ const TopProducts = [
     id: "8",
     image:
       "https://rukminim1.flixcart.com/image/880/1056/kfoapow0-0/shirt/b/w/n/l-white-5-jai-textiles-original-imafw2gqhcpfgygn.jpeg?q=50",
-    title: "T-Shirt",
+    title: "Allen Solly",
     sellingamount: 825,
     actualprice: 1500,
     discount: 45,
-    description: "Printed Women Round Neck Yellow T-Shirt For Woman",
+    description: "Allen Solly White Shirt For Men",
   },
 ];
 

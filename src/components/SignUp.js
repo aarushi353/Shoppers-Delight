@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "./Button";
+import { Link } from "react-router-dom";
+import "./Buttons.css";
 import { Form } from "react-bootstrap";
-
 function SignUp() {
   return (
     <center>
@@ -14,11 +14,13 @@ function SignUp() {
             className="mb-3"
             placeholder="First name"
             style={{ width: 270 }}
+            required
           />
           <Form.Control
             className="mb-3"
             placeholder="Last name"
             style={{ width: 270 }}
+            required
           />
           <Form.Control
             className="mb-3"
@@ -26,6 +28,7 @@ function SignUp() {
             type="email"
             placeholder="Enter email"
             style={{ width: 270 }}
+            required
           />
           <Form.Control
             className="mb-3"
@@ -33,8 +36,12 @@ function SignUp() {
             type="password"
             placeholder="Password"
             style={{ width: 270 }}
+            required
           />
-          <Button type="submit" text="SignUp" />
+          <button type="submit" className="button" component={Link} to="/LogIn">
+            {" "}
+            SignUp
+          </button>
         </Form>
       </div>
     </center>
