@@ -11,7 +11,7 @@ import Adminpage from "./pages/Adminpage";
 import Signup from "./pages/SignUp";
 import Orders from "./pages/Orders";
 import Users from "./pages/Users";
-
+import Checkout from "./pages/Checkout";
 export const CartProduct = createContext();
 
 function App() {
@@ -46,29 +46,32 @@ function App() {
           <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/Search">
+          <Route path="/Search" exact>
             <Search />
           </Route>
           <Route path="/Products" exact>
             <Product />
           </Route>
-          <Route path="/Cart">
+          <Route path="/Cart" exact>
             <Cart />
           </Route>
-          <Route path="/Login">
+          <Route path="/Login" exact>
             <Login />
           </Route>
-          <Route path="/Signup">
+          <Route path="/Signup" exact>
             <Signup />
           </Route>
-          <Route path="/Admin">
+          <Route path="/Admin" exact>
             <Adminpage />
           </Route>
-          <Route path="/Orders">
+          <Route path="/Orders" exact>
             <Orders />
           </Route>
-          <Route path="/Users">
+          <Route path="/Users" exact>
             <Users />
+          </Route>
+          <Route path="/Checkout" exact>
+            <Checkout />
           </Route>
         </Switch>
       </div>
