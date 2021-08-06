@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
-import image from "../assets/images/landing.png";
-import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-import Item from "./Item";
-import "./Searchbar.css";
-import TopProducts from "./TopProducts.js";
-import "./Landing.css";
 import { Button } from "@material-ui/core";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import image from "../assets/images/landing.png";
+import TopProducts from "./TopProducts";
+import Item from "./Item";
+
+import "./Landing.css";
+
 function LandingPage() {
   return (
     <div className="Landing">
@@ -15,7 +16,14 @@ function LandingPage() {
         <center>
           <form className="searchform">
             <input type="email" placeholder="Search" />
-            <Button component={Link} type="submit" variant="contained" color="primary" to="/Search" style={{height: 60}}>
+            <Button
+              component={Link}
+              type="submit"
+              variant="contained"
+              color="primary"
+              to="/Search"
+              style={{ height: 60 }}
+            >
               Search
             </Button>
           </form>

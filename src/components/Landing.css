@@ -17,3 +17,39 @@ img{
     margin-left: 5%;
     margin-right: 5%;
 }
+.search {
+    background: #212529;
+    display: grid;
+    align-items: center;
+  }
+  .searchform {
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  form > input {
+    flex: 1 1 10ch;
+    margin: 0.5rem;
+  }
+  
+  form > input[type="email"] {
+    flex: 3 1 30ch;
+  }
+  
+  input {
+    border: none;
+    background: hsl(0, 0%, 93%);
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+  }
+  
+  @media (max-width: 400px) {
+    .searchform {
+      margin-right: 1%;
+      margin-left: 1%;
+    }
+  }
+  
