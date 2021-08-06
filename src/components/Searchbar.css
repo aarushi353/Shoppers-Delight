@@ -6,6 +6,7 @@
 .searchform {
   display: flex;
   flex: wrap;
+  flex-direction: row;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -26,10 +27,6 @@ input {
   padding: 0.75rem 1rem;
 }
 
-input[type="submit"] {
-  background: #5455d7;
-  color: white;
-}
 @media (max-width: 400px) {
   .searchform {
     margin-right: 1%;
