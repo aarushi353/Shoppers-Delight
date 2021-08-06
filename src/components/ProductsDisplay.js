@@ -67,7 +67,7 @@ const ProductsDisplay = () => {
           </button>
         </div>
       </div>
-      <div className="top-products">
+      <div className="products-section">
         <center>
           <Row>
             {items.map((elements) => {

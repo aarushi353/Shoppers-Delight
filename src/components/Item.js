@@ -29,7 +29,7 @@ function Item(props) {
         <Card.Text>{props.description}</Card.Text>
         <Card.Title>
           ₹ {props.sellingamount} <del>₹{props.actualprice} </del>{" "}
-          <span style={{ color: "green" }}> {props.discount} % Off</span>{" "}
+          <span style={{ color: "green" }}> {props.discount}% Off</span>{" "}
         </Card.Title>
         <center>
           <ButtonProduct
