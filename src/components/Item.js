@@ -22,8 +22,8 @@ function Item(props) {
     }
   }
   return (
-    <Card style={{ width: 300 }} className="my-3 p-3">
-      <Card.Img variant="top" src={props.image} />
+    <Card style={{ width: 250 }} className="my-3 p-3">
+      <Card.Img variant="top" src={props.image} style={{height: 230}} />
       <Card.Body>
         <Card.Title> {props.title} </Card.Title>
         <Card.Text>{props.description}</Card.Text>

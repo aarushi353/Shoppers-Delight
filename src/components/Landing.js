@@ -28,7 +28,7 @@ function LandingPage() {
         </p>
       </center>
       <div className="top-products">
-        <Row>
+        <center><Row>
           {TopProducts.map((product) => {
             return (
               <Col key={product.id} sm={12} md={6} lg={4} xl={3}>
@@ -44,7 +44,7 @@ function LandingPage() {
               </Col>
             );
           })}
-        </Row>
+        </Row></center>
       </div>
     </div>
   );

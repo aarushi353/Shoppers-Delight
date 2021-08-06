@@ -1,10 +1,13 @@
 import React from "react";
-import SearchBar from "../components/SearchBar";
+// import "../components/Landing.css";
+// import ProductsDisplay from "../components/ProductsDisplay";
 function Product() {
   return (
-    <div>
-      <SearchBar />
-      Products
+    <div className="products_dummy">
+      <p className="para" style={{ fontSize: 50 }}>
+        <center>Products</center>
+      </p>
+      {/* <ProductsDisplay /> */}
     </div>
   );
 }

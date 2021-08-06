@@ -8,7 +8,7 @@ const TopProducts = [
     actualprice: 63990,
     discount: 20,
     description:
-      "15 Core i5 10th Gen-(8 GB/1 TB HDD/15.6 inch, Transparent Silver)",
+      "15 Core i5 10th Gen-(8 GB/1 TB HDD/15.6 inch)",
   },
   {
     id: "22",
@@ -19,7 +19,7 @@ const TopProducts = [
     actualprice: 7790,
     discount: 10,
     description:
-      "DSC-W800/BC IN5 (20.1 MP, 5 Optical Zoom, 13x Digital Zoom, Black)",
+      "DSC-W800/BC IN5 (20.1 MP, 5 Optical Zoom, 13x Digital Zoom)",
   },
   {
     id: "23",
@@ -50,7 +50,7 @@ const TopProducts = [
     actualprice: 3990,
     discount: 69,
     description:
-      "boAt Rockerz 450 Bluetooth Headset  (Luscious Black, On the Ear)",
+      "boAt Rockerz 450 Bluetooth Headset (Luscious Black)",
   },
   {
     id: "26",
@@ -81,7 +81,7 @@ const TopProducts = [
     sellingamount: 825,
     actualprice: 1500,
     discount: 45,
-    description: "Allen Solly White Shirt For Men",
+    description: "White Shirt For Men by Allen Solly",
   },
 ];
 

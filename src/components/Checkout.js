@@ -14,7 +14,6 @@ const steps = ["Shipping Address", "Payment details"];
 const CheckoutForm = () => {
   const [activeStep, setActiveStep] = useState(0);
   const classes = useStyles();
-  
 
   const Confirmation = () => (
     <div>Confirmation</div>

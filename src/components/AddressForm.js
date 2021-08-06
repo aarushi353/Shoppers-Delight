@@ -1,19 +1,11 @@
 import React, { useState } from "react";
-import {
-  InputLabel,
-  Select,
-  MenuItem,
-  Button,
-  Grid,
-  Typography,
-} from "@material-ui/core";
+import { Button, Grid, Typography } from "@material-ui/core";
 import { useForm, FormProvider } from "react-hook-form";
 import FormInput from "./CustomTextField";
 import { Link } from "react-router-dom";
 
 const AddressForm = () => {
   const methods = useForm();
-
   return (
     <>
       <Typography variant="h6" gutterBottom>
