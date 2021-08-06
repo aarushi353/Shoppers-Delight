@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap");
+
+.products_dummy {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.btn-primary {
+  background-color: #5455d7;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #2626c1;
+  outline: none;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: black;
+  color: whitesmoke;
+  outline: none;
+}
