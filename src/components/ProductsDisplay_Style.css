@@ -22,3 +22,13 @@
   color: whitesmoke;
   outline: none;
 }
+.para {
+  color: white;
+  font-size: 230%;
+  font-family: "Merienda", cursive;
+  padding-top: 3%;
+}
+.top-products {
+  margin-left: 5%;
+  margin-right: 5%;
+}

@@ -63,7 +63,7 @@ const DummyProducts = [
     sellingamount: 1432,
     actualprice: 1790,
     discount: 20,
-    description: "Women Pink Solid Pure Cotton Round Neck T-shirt",
+    description: "Women Pink Pure Cotton Round Neck T-shirt",
   },
   {
     id: "7",
@@ -97,8 +97,7 @@ const DummyProducts = [
     sellingamount: 1199,
     actualprice: 3990,
     discount: 69,
-    description:
-      "boAt Rockerz 450 Bluetooth Headset  (Luscious Black)",
+    description: "boAt Rockerz 450 Bluetooth Headset",
   },
   {
     id: "10",
@@ -106,10 +105,9 @@ const DummyProducts = [
     title: "OnePlus",
     category: "Electronics",
     sellingamount: 33085,
-    actualamount: 36762,
+    actualprice: 36762,
     discount: 10,
-    description:
-      "5G Unlocked Smartphone, 6GB RAM + 128GB storage",
+    description: "5G Smartphone, 6GB RAM + 128GB storage",
   },
   {
     id: "11",
@@ -120,8 +118,7 @@ const DummyProducts = [
     sellingamount: 6999,
     actualprice: 7790,
     discount: 10,
-    description:
-      "20.1 MP, 5 Optical Zoom, 13x Digital Zoom, Black",
+    description: "20.1 MP, 5 Optical Zoom, 13x Digital Zoom, Black",
   },
   {
     id: "12",
@@ -129,10 +126,9 @@ const DummyProducts = [
     title: "Sony",
     category: "Electronics",
     sellingamount: 17783,
-    actualamount: 22229,
+    actualprice: 22229,
     discount: 20,
-    description:
-      "8 MP Digital Camera (Black)",
+    description: "8 MP Digital Camera (Black)",
   },
   {
     id: "13",
@@ -141,7 +137,7 @@ const DummyProducts = [
     title: "Ceiling Lamp",
     category: "Home & Decor",
     sellingamount: 699,
-    actualamount: 3600,
+    actualprice: 3600,
     discount: 80,
     description: "Brightlyt Vintage Black Hanging Light",
   },
@@ -152,10 +148,9 @@ const DummyProducts = [
     title: "Wall Shelves",
     category: "Home & Decor",
     sellingamount: 1239,
-    actualamount: 2999,
+    actualprice: 2999,
     discount: 58,
-    description:
-      "Home Decor, Decoration-Set of 6 MDF Wall Shelf ",
+    description: "Home Decor, Decoration-Set of 6 MDF Wall Shelf ",
   },
   {
     id: "15",
@@ -164,7 +159,7 @@ const DummyProducts = [
     title: "Wall Clock",
     category: "Home & Decor",
     sellingamount: 339,
-    actualamount: 1499,
+    actualprice: 1499,
     discount: 77,
     description: "E Deals Analog 25 cm X 25 cm Wall Clock",
   },
@@ -175,10 +170,9 @@ const DummyProducts = [
     title: "Set of 4 Monk",
     category: "Home & Decor",
     sellingamount: 199,
-    actualamount: 599,
+    actualprice: 599,
     discount: 66,
-    description:
-      "Miniature Buddha Figurines Showpiece for Home",
+    description: "Miniature Buddha Figurines Showpiece",
   },
   {
     id: "17",
@@ -187,10 +181,9 @@ const DummyProducts = [
     title: "Pendant",
     category: "Accessories",
     sellingamount: 179,
-    actualamount: 999,
+    actualprice: 999,
     discount: 82,
-    description:
-      "Love Heart Beat Shape Necklace Golden Chain",
+    description: "Love Heart Beat Shape Necklace Golden Chain",
   },
   {
     id: "18",
@@ -199,7 +192,7 @@ const DummyProducts = [
     title: "AnalogWatch",
     category: "Accessories",
     sellingamount: 2956,
-    actualamount: 3695,
+    actualprice: 3695,
     discount: 20,
     description: "NN6198QL01 Go Skate 3.0 Watch For Women",
   },
@@ -210,7 +203,7 @@ const DummyProducts = [
     title: "Bracelet",
     category: "Accessories",
     sellingamount: 575,
-    actualamount: 3999,
+    actualprice: 3999,
     discount: 85,
     description: "Sterling Silver Sterling Silver Bracelet",
   },

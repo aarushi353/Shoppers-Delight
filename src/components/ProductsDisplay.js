@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "./ProductsDisplay_Style.css";
 import { Row, Col } from "react-bootstrap";
-import DummyProducts from "./Dummy_Products";
-import "./Landing.css";
-import ButtonProduct from "./ButtonProduct.js";
 import { Card } from "react-bootstrap";
 import { useContext } from "react";
 import { CartProduct } from "../App";
+import DummyProducts from "./Dummy_Products";
+import ButtonProduct from "./ButtonProduct.js";
+import "./ProductsDisplay_Style.css";
+
 const ProductsDisplay = () => {
   const [items, setItems] = useState(DummyProducts);
 
@@ -92,17 +92,20 @@ const ProductsDisplay = () => {
                       <Card.Title> {title} </Card.Title>
                       <Card.Text>{description}</Card.Text>
                       <Card.Title>
-                        ₹ {sellingamount} <del>₹{actualprice} </del>{" "}
+                        ₹ {sellingamount} <del>₹{actualprice} </del> <br />
                         <span style={{ color: "green" }}>
                           {" "}
-                          {discount} % Off
+                          {discount}% Off
                         </span>{" "}
                       </Card.Title>
                       <center>
                         <ButtonProduct
                           CartStatusHandler={CartStatusHandler}
-                          text={itemIsAddedToCart ? "Remove from Cart" : "Add to Cart"}
-                          
+                          text={
+                            itemIsAddedToCart
+                              ? "Remove from Cart"
+                              : "Add to Cart"
+                          }
                         />
                       </center>
                     </Card.Body>
@@ -113,7 +116,6 @@ const ProductsDisplay = () => {
           </Row>
         </center>
       </div>
-
     </>
   );
 };
