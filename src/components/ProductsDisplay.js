@@ -19,21 +19,6 @@ const ProductsDisplay = () => {
   };
   const cartProduct = useContext(CartProduct);
   const itemIsAddedToCart = cartProduct.itemIsAddedToCart(DummyProducts.id);
-  function CartStatusHandler() {
-    if (itemIsAddedToCart) {
-      cartProduct.removeCart(DummyProducts.id);
-    } else {
-      cartProduct.addToCart({
-        id: DummyProducts.id,
-        title: DummyProducts.title,
-        sellingamount: DummyProducts.sellingamount,
-        actualamount: DummyProducts.actualamount,
-        description: DummyProducts.description,
-        image: DummyProducts.image,
-        discount: DummyProducts.discount,
-      });
-    }
-  }
   return (
     <>
       <div className="menu-tabs container">
@@ -80,8 +65,24 @@ const ProductsDisplay = () => {
                 actualprice,
                 discount,
               } = elements;
+
+              function CartStatusHandler() {
+                if (itemIsAddedToCart) {
+                  cartProduct.removeCart(DummyProducts.id);
+                } else {
+                  cartProduct.addToCart({
+                    id: DummyProducts.id,
+                    title: DummyProducts.title,
+                    sellingamount: DummyProducts.sellingamount,
+                    actualamount: DummyProducts.actualamount,
+                    description: DummyProducts.description,
+                    image: DummyProducts.image,
+                    discount: DummyProducts.discount,
+                  });
+                }
+              }
               return (
-                <Col key={DummyProducts.id} sm={12} md={6} lg={4} xl={3}>
+                <Col key={elements.id} sm={12} md={6} lg={4} xl={3}>
                   <Card style={{ width: 250 }} className="my-3 p-3">
                     <Card.Img
                       variant="top"
