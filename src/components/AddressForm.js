@@ -26,7 +26,7 @@ const AddressForm = () => {
             <Button component={Link} variant="outlined" to="/Cart">
               Back to Cart
             </Button>
-            <Button type="submit" variant="contained" color="primary">
+            <Button type="submit" variant="contained" color="primary" component={Link} to="/Payment">
               Next
             </Button>
           </div>

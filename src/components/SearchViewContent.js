@@ -1,12 +1,12 @@
-import React from 'react'
+// import React from 'react'
 
-const SearchViewContent = () => {
+// const SearchViewContent = () => {
     
-    return (
-        <div>
+//     return (
+//         <div>
             
-        </div>
-    )
-}
+//         </div>
+//     )
+// }
 
-export default SearchViewContent
+// export default SearchViewContent

@@ -1,27 +1,33 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React,{useState} from "react";
+// import { Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 import { Button } from "@material-ui/core";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import image from "../assets/images/landing.png";
 import TopProducts from "./TopProducts";
 import Item from "./Item";
-
 import "./Landing.css";
 
 function LandingPage() {
+  // const [productList, setProductsList] = useState("");
   return (
     <div className="Landing">
       <section className="search">
         <center>
           <form className="searchform">
-            <input type="email" placeholder="Search" />
+            <input
+              type="text"
+              placeholder="Search"
+              // onChange={(event) => {
+              //   setProductsList(event.target.value);
+              // }}
+            />
             <Button
-              component={Link}
+              // component={Link}
               type="submit"
               variant="contained"
               color="primary"
-              to="/Search"
+              // to="/Search"
               style={{ height: 60 }}
             >
               Search
