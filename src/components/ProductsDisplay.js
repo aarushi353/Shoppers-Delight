@@ -61,7 +61,7 @@ const ProductsDisplay = () => {
               } = elements;
               return (
                 <Col key={elements.id} sm={12} md={6} lg={4} xl={3}>
-                 <Item
+                  <Item
                     title={title}
                     image={image}
                     sellingamount={sellingamount}

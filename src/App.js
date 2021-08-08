@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import { useState, createContext } from "react";
 import Header from "./components/Header";
 import Home from "./pages/LandingPage";
-// import Search from "./pages/Search";
+import Search from "./pages/Search";
 import Product from "./pages/Products";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
@@ -47,9 +47,9 @@ function App() {
           <Route path="/" exact>
             <Home />
           </Route>
-          {/* <Route path="/Search" exact>
+          <Route path="/Search" exact>
             <Search />
-          </Route> */}
+          </Route>
           <Route path="/Products" exact>
             <Product />
           </Route>

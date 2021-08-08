@@ -7,8 +7,7 @@ const TopProducts = [
     sellingamount: 50990,
     actualprice: 63990,
     discount: 20,
-    description:
-      "15 Core i5 10th Gen-(8 GB/1 TB HDD/15.6 inch)",
+    description: "15 Core i5 10th Gen-(8 GB/1 TB HDD/15.6 inch) laptop",
   },
   {
     id: "22",
@@ -18,8 +17,7 @@ const TopProducts = [
     sellingamount: 6999,
     actualprice: 7790,
     discount: 10,
-    description:
-      "DSC-W800/BC IN5 (20.1 MP, 5 Optical Zoom, 13x Digital Zoom)",
+    description: "DSC-W800/BC IN5 (20.1 MP, 5 Optical Zoom, 13x Digital Zoom)",
   },
   {
     id: "23",
@@ -49,18 +47,18 @@ const TopProducts = [
     sellingamount: 1199,
     actualprice: 3990,
     discount: 69,
-    description:
-      "boAt Rockerz 450 Bluetooth Headset (Luscious Black)",
+    description: "boAt Rockerz 450 Bluetooth Headset (Luscious Black)",
   },
   {
     id: "26",
     image:
-      "https://rukminim1.flixcart.com/image/880/1056/kiew3gw0-0/t-shirt/t/q/1/xs-dowmn035lylw-difference-of-opinion-original-imafy7jzmeh8yduw.jpeg?q=50",
-    title: "T-Shirt",
-    sellingamount: 975,
-    actualprice: 1500,
-    discount: 55,
-    description: "Printed Women Round Neck Yellow T-Shirt For Woman",
+      "https://rukminim1.flixcart.com/image/880/1056/kqttg280/necklace-chain/u/8/r/heartbeat-chain-brado-jewellery-original-imag4qwqp9zgp685.jpeg?q=50",
+    title: "Pendant",
+    category: "Accessories",
+    sellingamount: 179,
+    actualprice: 999,
+    discount: 82,
+    description: "Love Heart Beat Shaped Pendant with Golden Chain",
   },
   {
     id: "27",
@@ -81,7 +79,7 @@ const TopProducts = [
     sellingamount: 825,
     actualprice: 1500,
     discount: 45,
-    description: "White Shirt For Men by Allen Solly",
+    description: "Plain Dailywear White Shirt For Men by Allen Solly",
   },
 ];
 

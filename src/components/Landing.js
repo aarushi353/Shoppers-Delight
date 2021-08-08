@@ -1,5 +1,5 @@
-import React,{useState} from "react";
-// import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 import { Button } from "@material-ui/core";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
@@ -9,7 +9,7 @@ import Item from "./Item";
 import "./Landing.css";
 
 function LandingPage() {
-  // const [productList, setProductsList] = useState("");
+  const [productList, setProductsList] = useState("");
   return (
     <div className="Landing">
       <section className="search">
@@ -18,16 +18,16 @@ function LandingPage() {
             <input
               type="text"
               placeholder="Search"
-              // onChange={(event) => {
-              //   setProductsList(event.target.value);
-              // }}
+              onChange={(event) => {
+                setProductsList(event.target.value);
+              }}
             />
             <Button
-              // component={Link}
+              component={Link}
               type="submit"
               variant="contained"
               color="primary"
-              // to="/Search"
+              to="/Search"
               style={{ height: 60 }}
             >
               Search
