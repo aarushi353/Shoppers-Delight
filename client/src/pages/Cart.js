@@ -18,12 +18,12 @@ function Cart() {
     content = <Item product={cartProduct.cart} />;
   }
   return (
-    <div>
+    <>
       <p className="para" style={{ fontSize: 50 }}>
         <center>Cart</center>
       </p>
       {content}
-    </div>
+    </>
   );
 }
 

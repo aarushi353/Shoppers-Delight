@@ -3,9 +3,9 @@ import { Form } from "react-bootstrap";
 import "../components/Buttons.css";
 function Adminpage() {
   return (
-    <div>
+    <>
       <center>
-        <div>
+        <>
           <p className="para" style={{ marginBottom: 20, marginTop: 40 }}>
             <strong>Add Your Product!</strong>
           </p>
@@ -52,9 +52,9 @@ function Adminpage() {
               Add Product
             </button>
           </Form>
-        </div>
+        </>
       </center>
-    </div>
+    </>
   );
 }
 

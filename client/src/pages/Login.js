@@ -4,7 +4,7 @@ import "../components/Buttons.css";
 
 function Login() {
   return (
-    <div>
+    <>
       <center>
         <div className="Login">
           <p className="para" style={{ marginBottom: 20, marginTop: 40 }}>
@@ -36,7 +36,7 @@ function Login() {
           </Form>
         </div>
       </center>
-    </div>
+    </>
   );
 }
 

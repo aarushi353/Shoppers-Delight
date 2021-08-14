@@ -22,13 +22,17 @@ function Item(props) {
     }
   }
   return (
-    <Card style={{ width: 250,backgroundColor:"#A2DBFA",color: "#012443" }} className="my-3 p-3">
+    <Card
+      style={{ width: 250, backgroundColor: "#A2DBFA", color: "#012443" }}
+      className="my-3 p-3"
+    >
       <Card.Img variant="top" src={props.image} style={{ height: 230 }} />
       <Card.Body>
         <Card.Title> {props.title} </Card.Title>
         <Card.Text>{props.description}</Card.Text>
         <Card.Title>
-          ₹ {props.sellingamount} <del>₹{props.actualprice} </del><br />
+          ₹ {props.sellingamount} <del>₹{props.actualprice} </del>
+          <br />
           <span style={{ color: "green" }}> {props.discount}% Off</span>{" "}
         </Card.Title>
         <center>
