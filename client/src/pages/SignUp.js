@@ -1,51 +1,90 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../components/Buttons.css";
-import { Form } from "react-bootstrap";
-function Signup() {
-  return (
+import { Formik } from "formik";
+
+const Signup = () => (
+  <div style={{ color: "white", display: "flex", flexDirection: "column", marginTop: 50 }}>
     <center>
-      <div className="Signup">
-        <p className="para" style={{ marginBottom: 20, marginTop: 40 }}>
-          <strong> Sign Up</strong>
-        </p>
-        <Form style={{ marginTop: 70 }}>
-          <Form.Control
-            className="mb-3"
-            placeholder="First name"
-            style={{ width: 270 }}
-            required
-          />
-          <Form.Control
-            className="mb-3"
-            placeholder="Last name"
-            style={{ width: 270 }}
-            required
-          />
-          <Form.Control
-            className="mb-3"
-            controlId="formBasicEmail"
-            type="email"
-            placeholder="Enter email"
-            style={{ width: 270 }}
-            required
-          />
-          <Form.Control
-            className="mb-3"
-            controlId="formBasicPassword"
-            type="password"
-            placeholder="Password"
-            style={{ width: 270 }}
-            required
-          />
-          <button type="submit" className="button" component={Link} to="/LogIn">
-            {" "}
-            SignUp
-          </button>
-        </Form>
-      </div>
+      <h1>Create Account</h1>
     </center>
-  );
-}
+    <Formik
+      initialValues={{ email: "", password: "" }}
+      validate={(values) => {
+        const errors = {};
+        if (!values.email) {
+          errors.email = "";
+        } else if (
+          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+        ) {
+          errors.email = "Invalid email address";
+        }
+        return errors;
+      }}
+      onSubmit={(values, { setSubmitting }) => {
+        setTimeout(() => {
+          // alert(JSON.stringify(values, null, 2));
+          setSubmitting(false);
+        }, 400);
+      }}
+    >
+      {({
+        values,
+        errors,
+        touched,
+        handleChange,
+        handleBlur,
+        handleSubmit,
+        isSubmitting,
+      }) => (
+        <form onSubmit={handleSubmit} style={{ color: "white",alignSelf: 'center',marginTop: 30 }}>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+          <input
+              placeholder="First Name"
+              className="mb-3"
+              type="text"
+              name="name"
+              style={{ width: 270 }}
+              required
+            />
+            <input
+              placeholder="Last Name"
+              className="mb-3"
+              type="text"
+              name="name"
+              style={{ width: 270 }}
+              required
+            />
+            <input
+              placeholder="Email"
+              className="mb-3"
+              type="email"
+              name="email"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={values.email}
+              style={{ width: 270 }}
+              required
+            />
+            {errors.email && touched.email && errors.email}
+            <input
+              placeholder="Password"
+              className="mb-3"
+              type="password"
+              name="password"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={values.password}
+              required
+              style={{ width: 270 }}
+            />
+            {errors.password && touched.password && errors.password}
+            <button type="submit" disabled={isSubmitting} className="button">
+              Submit
+            </button>
+          </div>
+        </form>
+      )}
+    </Formik>
+  </div>
+);
 
 export default Signup;

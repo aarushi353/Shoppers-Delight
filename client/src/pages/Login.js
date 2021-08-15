@@ -21,7 +21,7 @@ const Login = () => (
       }}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
+          // alert(JSON.stringify(values, null, 2));
           setSubmitting(false);
         }, 400);
       }}
