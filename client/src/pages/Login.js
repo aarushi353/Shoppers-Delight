@@ -1,43 +1,74 @@
 import React from "react";
-import { Form } from "react-bootstrap";
-import "../components/Buttons.css";
+import { Formik } from "formik";
 
-function Login() {
-  return (
-    <>
-      <center>
-        <div className="Login">
-          <p className="para" style={{ marginBottom: 20, marginTop: 40 }}>
-            <strong> Log In</strong>
-          </p>
-          <Form style={{ marginTop: 20 }} className="Loginform">
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="Enter email"
-                required
-                style={{ width: 270 }}
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control
-                type="password"
-                placeholder="Password"
-                required
-                style={{ width: 270 }}
-              />
-            </Form.Group>
-            <button type="submit" className="button">
-              Log In
+const Login = () => (
+  <div style={{ color: "white", display: "flex", flexDirection: "column", marginTop: 50 }}>
+    <center>
+      <h1>Welcome Back!</h1>
+    </center>
+    <Formik
+      initialValues={{ email: "", password: "" }}
+      validate={(values) => {
+        const errors = {};
+        if (!values.email) {
+          errors.email = "";
+        } else if (
+          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+        ) {
+          errors.email = "Invalid email address";
+        }
+        return errors;
+      }}
+      onSubmit={(values, { setSubmitting }) => {
+        setTimeout(() => {
+          alert(JSON.stringify(values, null, 2));
+          setSubmitting(false);
+        }, 400);
+      }}
+    >
+      {({
+        values,
+        errors,
+        touched,
+        handleChange,
+        handleBlur,
+        handleSubmit,
+        isSubmitting,
+      }) => (
+        <form onSubmit={handleSubmit} style={{ color: "white",alignSelf: 'center',marginTop: 30 }}>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <input
+              placeholder="Email"
+              className="mb-3"
+              type="email"
+              name="email"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={values.email}
+              style={{ width: 270 }}
+              required
+            />
+            {errors.email && touched.email && errors.email}
+            <input
+              placeholder="Password"
+              className="mb-3"
+              type="password"
+              name="password"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={values.password}
+              required
+              style={{ width: 270 }}
+            />
+            {errors.password && touched.password && errors.password}
+            <button type="submit" disabled={isSubmitting} className="button">
+              Submit
             </button>
-          </Form>
-        </div>
-      </center>
-    </>
-  );
-}
+          </div>
+        </form>
+      )}
+    </Formik>
+  </div>
+);
 
 export default Login;
