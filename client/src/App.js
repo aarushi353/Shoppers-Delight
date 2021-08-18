@@ -12,7 +12,6 @@ import Signup from "./pages/SignUp";
 import Orders from "./pages/Orders";
 import Users from "./pages/Users";
 import Checkout from "./pages/Checkout";
-import Payment from "./pages/Payment";
 export const CartProduct = createContext();
 
 function App() {
@@ -73,9 +72,6 @@ function App() {
           </Route>
           <Route path="/Checkout" exact>
             <Checkout />
-          </Route>
-          <Route path="/Payment" exact>
-            <Payment />
           </Route>
         </Switch>
       </div>
