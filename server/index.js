@@ -11,6 +11,8 @@ app.use(cors({
     credentials:true
 }))
 
+app.use(express.urlencoded())
+app.use(express.json())
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT,(req,res)=>{
