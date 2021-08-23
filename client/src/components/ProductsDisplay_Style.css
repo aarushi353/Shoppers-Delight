@@ -9,6 +9,7 @@
   outline: none;
   border: none;
   transition: all 0.3s ease-in-out;
+  margin-left: 1%
 }
 
 .btn-primary:hover {
@@ -32,4 +33,12 @@
   margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
+}
+@media (max-width: 450px){
+  .btn-primary{
+    width: 25%;
+    font-size: small;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
 }
