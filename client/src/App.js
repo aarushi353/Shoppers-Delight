@@ -46,31 +46,31 @@ function App() {
           <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/Search" exact>
+          <Route path="/search" exact>
             <Search />
           </Route>
-          <Route path="/Products" exact>
+          <Route path="/products" exact>
             <Product />
           </Route>
-          <Route path="/Cart" exact>
+          <Route path="/cart" exact>
             <Cart />
           </Route>
-          <Route path="/Login" exact>
+          <Route path="/login" exact>
             <Login />
           </Route>
-          <Route path="/Signup" exact>
+          <Route path="/signup" exact>
             <Signup />
           </Route>
-          <Route path="/Admin" exact>
+          <Route path="/admin" exact>
             <Adminpage />
           </Route>
-          <Route path="/Orders" exact>
+          <Route path="/admin/orders" exact>
             <Orders />
           </Route>
-          <Route path="/Users" exact>
+          <Route path="/admin/users" exact>
             <Users />
           </Route>
-          <Route path="/Checkout" exact>
+          <Route path="/checkout" exact>
             <Checkout />
           </Route>
         </Switch>

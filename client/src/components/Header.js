@@ -16,18 +16,18 @@ function Header() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/Products" className="product">
+              <Nav.Link href="/products" className="product">
                 Products
               </Nav.Link>
-              <Nav.Link href="/Cart">
+              <Nav.Link href="/cart">
                 Cart{" "}
                 <span className="badge">{cartProduct.totalItemsInCart}</span>
               </Nav.Link>
             </Nav>
 
             <Nav>
-              <Nav.Link href="/Login">LogIn</Nav.Link>
-              <Nav.Link eventKey={2} href="/Signup">
+              <Nav.Link href="/login">LogIn</Nav.Link>
+              <Nav.Link eventKey={2} href="/signup">
                 SignUp
               </Nav.Link>
             </Nav>
