@@ -2,6 +2,12 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose')
+const User = require('./Models/users')
+const passport = require('passport');
+const LocalStrategy = require('passport-local');
+var session = require('express-session')
+const authRoutes = require('./Routes/auth');
+
 
 if(process.env.NODE_ENV !=="production"){
     const dotenv = require('Dotenv').config();
@@ -12,8 +18,39 @@ app.use(cors({
     credentials:true
 }))
 
+// Session
+
+// app.set('trust proxy', 1) 
+app.use(session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { 
+      //   secure: true
+   }
+  }))
+
+// Passport
+
+app.use(passport.initialize());
+app.use(passport.session());
+// passport.use(new LocalStrategy(User.authenticate()));
+passport.use(new LocalStrategy({
+  usernameField: 'email'
+}, User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+
+
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
+
+app.use('/auth',authRoutes);
+
+
+
+
+
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT,(req,res)=>{
