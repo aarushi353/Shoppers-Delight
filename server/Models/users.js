@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const passportLocalMongoose = require('passport-local-mongoose');
 
 const userSchema = mongoose.Schema({
 
@@ -23,11 +24,15 @@ const userSchema = mongoose.Schema({
     },
     orders:[
         { 
-           orderId:mongoose.SchemaTypes.ObjectId,
-           ref:'orders'
+           orderId:{
+               type:mongoose.SchemaTypes.ObjectId,
+               ref:'Orders'
+           }
+           
         },
     ]
 },{timestamps:true})
+userSchema.plugin(passportLocalMongoose,{usernameField:"email"});
 
 const Users = new mongoose.model('Users',userSchema);
 
