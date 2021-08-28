@@ -2,7 +2,7 @@ import React from "react";
 import { Formik } from "formik";
 
 const Login = () => (
-  <div style={{ color: "white", display: "flex", flexDirection: "column", marginTop: 50 }}>
+  <div style={{ display: "flex", flexDirection: "column", marginTop: 50,color:"#dc3545" }}>
     <center>
       <h1>Welcome Back!</h1>
     </center>
@@ -45,7 +45,7 @@ const Login = () => (
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.email}
-              style={{ width: 270 }}
+              style={{ width: 270,backgroundColor: "white" }}
               required
             />
             {errors.email && touched.email && errors.email}
@@ -58,7 +58,7 @@ const Login = () => (
               onBlur={handleBlur}
               value={values.password}
               required
-              style={{ width: 270 }}
+              style={{ width: 270,backgroundColor: "white" }}
             />
             {errors.password && touched.password && errors.password}
             <button type="submit" disabled={isSubmitting} className="button">

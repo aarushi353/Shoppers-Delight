@@ -1,24 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+
 .Landing {
   margin-bottom: 0;
   padding-bottom: 2%;
 }
 img {
-  width: 40%;
-  height: 30%;
-}
-.para {
-  color: white;
-  font-size: 230%;
-  font-family: "Merienda", cursive;
-  padding-top: 3%;
+  width: 80%;
+  height: 110%;
 }
 .top-products {
   margin-left: 5%;
   margin-right: 5%;
 }
 .search {
-  background: #212529;
+  background: #dc3545;
   display: grid;
   align-items: center;
 }
@@ -28,6 +23,20 @@ img {
   flex-direction: row;
   margin-left: 10%;
   margin-right: 10%;
+}
+.intro-section {
+  display: flex;
+  flex-direction: row;
+}
+.intro-para {
+  color: #dc3545;
+  margin-right: 20%;
+  margin-left: 20%;
+  text-align: justify;
+  font-size: 310%;
+  margin-top: 20%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 form > input {
@@ -50,5 +59,33 @@ input {
   .searchform {
     margin-right: 1%;
     margin-left: 1%;
+  }
+}
+@media (max-width: 1236px) {
+  .intro-para {
+    font-size: 200%;
+    margin-top: 25%;
+  }
+}
+@media (max-width: 900px) {
+  .intro-para {
+    font-size: 150%;
+    margin-top: 25%;
+  }
+}
+@media (max-width: 724px) {
+  .intro-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .intro-para{
+    margin-top: 0;
+  }
+  
+}
+
+@media (min-width: 944px) and (max-width: 1006px){
+  .intro-para{
+    text-align: center;
   }
 }

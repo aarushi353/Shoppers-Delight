@@ -13,33 +13,32 @@ const ProductsDisplay = () => {
 
     setItems(updatedItems);
   };
-  return (
-    <>
+  return ( <div>
       <div className="menu-tabs container">
         <div className="menu-tab d-flex justify-content-around">
-          <button className="btn btn-primary" onClick={() => filterItem("Men")}>
+          <button className="btn btn-danger" onClick={() => filterItem("Men")}>
             Men
           </button>
           <button
-            className="btn btn-primary"
+            className="btn btn-danger"
             onClick={() => filterItem("Women")}
           >
             Women
           </button>
-          <button
-            className="btn btn-primary"
+          <button 
+            className="btn btn-danger"
             onClick={() => filterItem("Accessories")}
           >
             Accessories
           </button>
           <button
-            className="btn btn-primary"
+            className="btn btn-danger"
             onClick={() => filterItem("Electronics")}
           >
             Electronics
           </button>
           <button
-            className="btn btn-primary"
+            className="btn btn-danger"
             onClick={() => filterItem("Home & Decor")}
           >
             Home & Decor
@@ -76,7 +75,7 @@ const ProductsDisplay = () => {
           </Row>
         </center>
       </div>
-    </>
+</div>    
   );
 };
 

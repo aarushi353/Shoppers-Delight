@@ -6,10 +6,10 @@ function Adminpage() {
     <>
       <center>
         <>
-          <p className="para" style={{ marginBottom: 20, marginTop: 40 }}>
+          <p className="para" style={{ marginBottom: 10, marginTop: 40,color:"#dc3545" }}>
             <strong>Add Your Product!</strong>
           </p>
-          <Form style={{ marginTop: 70 }}>
+          <Form style={{ marginTop: 50,marginBottom: 30 }}>
             <Form.Control
               className="mb-3"
               placeholder="Title"

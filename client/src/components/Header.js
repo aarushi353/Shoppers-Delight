@@ -7,8 +7,8 @@ import "./Header.css";
 function Header() {
   const cartProduct = useContext(CartProduct);
   return (
-    <>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    
+      <Navbar collapseOnSelect expand="lg" bg="danger" variant="dark">
         <Container>
           <Navbar.Brand href="/">
             <strong>ShoppersDelight</strong>
@@ -34,7 +34,7 @@ function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>
+  
   );
 }
 export default Header;

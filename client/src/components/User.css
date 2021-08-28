@@ -1,0 +1,17 @@
+.users{
+display: flex;
+flex-direction: row;
+padding-left: 30%;
+padding-right: 28%;
+}
+.user-card{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+@media (max-width: 1080px){
+    .users{
+        display: flex;
+        flex-direction: column;
+    }
+}

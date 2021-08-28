@@ -23,10 +23,10 @@ const AddressForm = () => {
           </Grid>
           <br />
           <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <Button component={Link} variant="outlined" to="/cart">
+            <Button component={Link} variant="outlined" to="/cart"style={{backgroundColor: "white",color: "#dc3545"}}>
               Back to Cart
             </Button>
-            <Button type="submit" variant="contained" color="primary">
+            <Button type="submit" variant="contained" style={{backgroundColor: "#dc3545",color: "white"}}>
               Next
             </Button>
           </div>
