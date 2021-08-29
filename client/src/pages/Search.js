@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Row, Col } from "react-bootstrap";
+import React, { useState, Link } from "react";
+import { Row, Col, Button } from "react-bootstrap";
 import Item from "../components/Item";
 import "../components/ProductsDisplay_Style.css";
 import "../components/Landing.css";
@@ -21,16 +21,22 @@ function Search() {
       <section className="search">
         <center>
           <form className="searchform">
-            <input type="text" placeholder="Search" onChange={filter} />
-            <button
+            <input
+              type="text"
+              placeholder="Search"
+              // onChange={(event) => {
+              //   setProductsList(event.target.value);
+              // }}
+            />
+            <Button
+              component={Link}
               type="submit"
               variant="contained"
-              color="primary"
-              style={{ height: 60, backgroundColor: "#5455d7" }}
-              onClick={() => filterItem()}
+              to="/Search"
+              style={{ height: 50, color: "#dc3545", marginTop: 5 }}
             >
               Search
-            </button>
+            </Button>
           </form>
         </center>
       </section>

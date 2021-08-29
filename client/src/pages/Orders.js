@@ -1,42 +1,7 @@
 import React from "react";
-import { Alert } from "react-bootstrap";
-const Order = () => {
-  const items = [
-    "primary",
-    "secondary",
-    "success",
-    "danger",
-    "warning",
-    "info",
-    "light",
-    "dark",
-  ];
-  return (
-    <center>
-      {items.map((variant, idx) => (
-        <Alert
-          key={idx}
-          variant={variant}
-          style={{ width: 300, marginTop: 30 }}
-        >
-          <table>
-            <tr style={{ display: "flex", justifyContent: "space-between" }}>
-              <th>Product</th>
-              <th>Quantity</th>
-            </tr>
-            <tr style={{ display: "flex", justifyContent: "space-between" }}>
-              <td>Book</td>
-              <td>2</td>
-            </tr>
-            <tr style={{ display: "flex", justifyContent: "space-between" }}>
-              <td>Shirts</td>
-              <td>4</td>
-            </tr>
-          </table>
-        </Alert>
-      ))}
-    </center>
-  );
+import Order from "../components/Order";
+const Orders = () => {
+  return <Order />;
 };
 
-export default Order;
+export default Orders;

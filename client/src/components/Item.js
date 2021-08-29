@@ -23,7 +23,7 @@ function Item(props) {
   }
   return (
     <Card
-      style={{ width: 250, backgroundColor: "#A2DBFA", color: "#012443" }}
+      style={{ width: 250, backgroundColor: "#ffff", color: "#012443" }}
       className="my-3 p-3"
     >
       <Card.Img variant="top" src={props.image} style={{ height: 230 }} />
