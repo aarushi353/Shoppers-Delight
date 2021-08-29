@@ -2,9 +2,16 @@ import React from "react";
 import { Formik } from "formik";
 
 const Login = () => (
-  <div style={{ display: "flex", flexDirection: "column", marginTop: 50,color:"#dc3545" }}>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      marginTop: 50,
+      color: "#dc3545",
+    }}
+  >
     <center>
-      <h1>Welcome Back!</h1>
+      <h1 className="para">Welcome Back!</h1>
     </center>
     <Formik
       initialValues={{ email: "", password: "" }}
@@ -35,7 +42,10 @@ const Login = () => (
         handleSubmit,
         isSubmitting,
       }) => (
-        <form onSubmit={handleSubmit} style={{ color: "white",alignSelf: 'center',marginTop: 30 }}>
+        <form
+          onSubmit={handleSubmit}
+          style={{ color: "white", alignSelf: "center", marginTop: 30 }}
+        >
           <div style={{ display: "flex", flexDirection: "column" }}>
             <input
               placeholder="Email"
@@ -45,7 +55,7 @@ const Login = () => (
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.email}
-              style={{ width: 270,backgroundColor: "white" }}
+              style={{ width: 270, backgroundColor: "white" }}
               required
             />
             {errors.email && touched.email && errors.email}
@@ -58,7 +68,7 @@ const Login = () => (
               onBlur={handleBlur}
               value={values.password}
               required
-              style={{ width: 270,backgroundColor: "white" }}
+              style={{ width: 270, backgroundColor: "white" }}
             />
             {errors.password && touched.password && errors.password}
             <button type="submit" disabled={isSubmitting} className="button">

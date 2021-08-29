@@ -1,6 +1,6 @@
 import React from "react";
 import Order from "../components/Order";
-const Orders  = () => {
+const Orders = () => {
   return <Order />;
 };
 

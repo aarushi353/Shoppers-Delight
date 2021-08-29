@@ -1,6 +1,6 @@
 import React from "react";
 import User from "../components/User";
-const Users  = () => {
+const Users = () => {
   return <User />;
 };
 

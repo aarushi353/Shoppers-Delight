@@ -1,19 +1,19 @@
-.users{
-display: flex;
-flex-direction: row;
-margin-left: 20%;
-margin-right: 20%;
-padding-left: 10%;
-padding-right: 10%;
+.users {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-.user-card{
-    margin-left: 1%;
-    margin-right: 1%;
+.user-card {
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
-@media (max-width: 1080px){
-    .users{
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 1080px) {
+  .users {
+    display: flex;
+    flex-direction: column;
+  }
 }

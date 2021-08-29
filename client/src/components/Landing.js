@@ -14,10 +14,7 @@ function LandingPage() {
       <section className="search">
         <center>
           <form className="searchform">
-            <input
-              type="text"
-              placeholder="Search"
-            />
+            <input type="text" placeholder="Search" />
             <Button
               component={Link}
               type="submit"
@@ -31,15 +28,14 @@ function LandingPage() {
         </center>
       </section>
       <div className="intro-section">
-        <center><img src={image} alt="img" /></center>
+        <center>
+          <img src={image} alt="img" />
+        </center>
         <div>
           <center>
-            <p
-              class="intro-para"
-            >
+            <p class="intro-para">
               A Few clicks and your market is{" "}
-              <span className="spanText">on the way.</span> That's all
-              it takes.{" "}
+              <span className="spanText">on the way.</span> That's all it takes.{" "}
               <Button
                 type="submit"
                 variant="contained"
@@ -55,9 +51,7 @@ function LandingPage() {
         </div>
       </div>
       <center>
-        <p className="para" style={{ fontSize: 50, color: "#dc3545" }}>
-          Top Picks
-        </p>
+        <p className="para">Top Picks</p>
       </center>
       <div className="top-products">
         <center>

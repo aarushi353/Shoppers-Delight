@@ -9,7 +9,7 @@ function Cart() {
   if (cartProduct.totalItemsInCart === 0) {
     content = (
       <center>
-        <p style={{  marginTop: 30, color: "#dc3545" }}>
+        <p style={{ marginTop: 30, color: "#dc3545" }}>
           You got no items in Cart yet. Start adding some?
         </p>
       </center>
@@ -19,7 +19,7 @@ function Cart() {
   }
   return (
     <>
-      <p className="para" style={{ fontSize: 50, color: "#dc3545" }}>
+      <p className="para">
         <center>Cart</center>
       </p>
       {content}

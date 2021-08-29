@@ -1,4 +1,4 @@
-import React, { useState,Link } from "react";
+import React, { useState, Link } from "react";
 import { Row, Col, Button } from "react-bootstrap";
 import Item from "../components/Item";
 import "../components/ProductsDisplay_Style.css";
@@ -20,7 +20,7 @@ function Search() {
     <div className="search-page">
       <section className="search">
         <center>
-        <form className="searchform">
+          <form className="searchform">
             <input
               type="text"
               placeholder="Search"

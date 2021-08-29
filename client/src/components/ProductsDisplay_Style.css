@@ -9,7 +9,7 @@
   outline: none;
   border: none;
   transition: all 0.3s ease-in-out;
-  margin-left: 1%
+  margin-left: 1%;
 }
 
 .btn-primary:hover {
@@ -24,7 +24,6 @@
   outline: none;
 }
 .para {
-  color: white;
   font-size: 230%;
   font-family: "Merienda", cursive;
   padding-top: 3%;
@@ -34,8 +33,8 @@
   margin-left: 5%;
   margin-right: 5%;
 }
-@media (max-width: 450px){
-  .btn-primary{
+@media (max-width: 450px) {
+  .btn-primary {
     width: 25%;
     font-size: small;
     padding-left: 1%;
