@@ -1,8 +1,10 @@
 .users{
 display: flex;
 flex-direction: row;
-padding-left: 30%;
-padding-right: 28%;
+margin-left: 20%;
+margin-right: 20%;
+padding-left: 10%;
+padding-right: 10%;
 }
 .user-card{
     margin-left: 1%;

@@ -38,7 +38,7 @@ function LandingPage() {
               class="intro-para"
             >
               A Few clicks and your market is{" "}
-              <span style={{ color: "#FFB830" }}>on the way.</span> That's all
+              <span className="spanText">on the way.</span> That's all
               it takes.{" "}
               <Button
                 type="submit"
@@ -47,7 +47,7 @@ function LandingPage() {
                 component={Link}
                 to="/products"
               >
-                Explore more
+                Shop Now
                 <NavigateNextIcon />
               </Button>
             </p>

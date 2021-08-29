@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 .Landing {
   margin-bottom: 0;
   padding-bottom: 2%;
@@ -33,12 +33,14 @@ img {
   margin-right: 20%;
   margin-left: 20%;
   text-align: justify;
-  font-size: 310%;
+  font-size: 300%;
   margin-top: 20%;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
-
+.spanText {
+  color: #ffb830;
+  font-family: "Allura", cursive;
+}
 form > input {
   flex: 1 1 10ch;
   margin: 0.5rem;
@@ -73,19 +75,28 @@ input {
     margin-top: 25%;
   }
 }
-@media (max-width: 724px) {
-  .intro-section{
+@media (max-width: 770px) {
+  .intro-section {
     display: flex;
     flex-direction: column;
   }
-  .intro-para{
+  .intro-para {
     margin-top: 0;
   }
-  
 }
 
-@media (min-width: 944px) and (max-width: 1006px){
-  .intro-para{
+@media (min-width: 944px) and (max-width: 1006px) {
+  .intro-para {
     text-align: center;
+  }
+}
+@media (min-width: 300px) and (max-width: 329px) {
+  .intro-para {
+    font-size: 155%;
+  }
+}
+@media (min-width: 310px) and (max-width: 324px) {
+  .intro-para {
+    font-size: 130%;
   }
 }

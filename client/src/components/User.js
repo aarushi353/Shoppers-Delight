@@ -5,7 +5,6 @@ const User = () => {
   return (
     <center>
     <div className="users">
-      
       <Card style={{ marginTop: 15 }} className="user-card">
         <Card.Body>
           <Card.Title>User's Name</Card.Title>

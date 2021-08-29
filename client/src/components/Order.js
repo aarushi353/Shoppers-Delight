@@ -3,7 +3,7 @@ import { ListGroup, Card } from "react-bootstrap";
 const Order = () => {
   return (
     <center>
-      <Card style={{ marginLeft: 70, marginRight: 70, marginTop: 15 }}>
+      <Card style={{ marginLeft: 80, marginRight: 80, marginTop: 15 }}>
         <Card.Header><strong>Order #1</strong></Card.Header>
         <ListGroup variant="flush">
           <ListGroup.Item>Bracelet</ListGroup.Item>
