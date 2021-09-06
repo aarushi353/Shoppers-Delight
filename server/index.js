@@ -7,6 +7,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 var session = require('express-session')
 const authRoutes = require('./Routes/auth');
+const productRoutes = require('./Routes/products');
 
 
 if(process.env.NODE_ENV !=="production"){
@@ -34,7 +35,6 @@ app.use(session({
 
 app.use(passport.initialize());
 app.use(passport.session());
-// passport.use(new LocalStrategy(User.authenticate()));
 passport.use(new LocalStrategy({
   usernameField: 'email'
 }, User.authenticate()));
@@ -46,9 +46,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
 app.use('/auth',authRoutes);
-
-
-
+app.use('/products',productRoutes);
 
 
 
