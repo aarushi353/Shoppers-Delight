@@ -1,9 +1,9 @@
 import React from "react";
-import CheckoutForm from "../components/Checkout";
+import AddressForm from "../components/AddressForm";
 function Checkout() {
   return (
     <>
-      <CheckoutForm />
+      <AddressForm />
     </>
   );
 }

@@ -1,56 +1,57 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 import { Button } from "@material-ui/core";
-import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import NavigateNextIcon from "@material-ui/icons/NavigateNext";
 import image from "../assets/images/landing.png";
 import TopProducts from "./TopProducts";
 import Item from "./Item";
 import "./Landing.css";
 
 function LandingPage() {
-  const [productList, setProductsList] = useState("");
   return (
     <div className="Landing">
       <section className="search">
         <center>
           <form className="searchform">
-            <input
-              type="text"
-              placeholder="Search"
-              onChange={(event) => {
-                setProductsList(event.target.value);
-              }}
-            />
+            <input type="text" placeholder="Search" />
             <Button
               component={Link}
               type="submit"
               variant="contained"
-              color="primary"
               to="/Search"
-              style={{ height: 60 }}
+              style={{ height: 50, color: "#dc3545", marginTop: 5 }}
             >
               Search
             </Button>
           </form>
         </center>
       </section>
-      <div>
-        <center>
-          <strong>
-            <p className="para">
-              Your Online Shopping Destination <ShoppingCartIcon />
-            </p>
-          </strong>
-        </center>
+      <div className="intro-section">
         <center>
           <img src={image} alt="img" />
         </center>
+        <div>
+          <center>
+            <p class="intro-para">
+              A Few clicks and your market is{" "}
+              <span className="spanText">on the way.</span> That's all it takes.{" "}
+              <Button
+                type="submit"
+                variant="contained"
+                style={{ backgroundColor: "#DC3545", color: "white" }}
+                component={Link}
+                to="/products"
+              >
+                Shop Now
+                <NavigateNextIcon />
+              </Button>
+            </p>
+          </center>
+        </div>
       </div>
       <center>
-        <p className="para" style={{ fontSize: 50 }}>
-          Top Picks
-        </p>
+        <p className="para">Top Picks</p>
       </center>
       <div className="top-products">
         <center>
