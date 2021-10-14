@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { CartProduct } from "../App";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Header.css";
+import "../assets/css/Header.css";
 function Header() {
   const cartProduct = useContext(CartProduct);
   return (

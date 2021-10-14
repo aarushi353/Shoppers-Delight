@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 import { Button } from "@material-ui/core";
@@ -6,24 +6,24 @@ import NavigateNextIcon from "@material-ui/icons/NavigateNext";
 import image from "../assets/images/landing.png";
 import TopProducts from "./TopProducts";
 import Item from "./Item";
-import "./Landing.css";
+import "../assets/css/Landing.css";
 
 function LandingPage() {
+  const [name, setName] = useState("");
   return (
     <div className="Landing">
       <section className="search">
         <center>
           <form className="searchform">
-            <input type="text" placeholder="Search" />
-            <Button
+            <input type="text" placeholder="Search" value={name} />
+            <button
               component={Link}
               type="submit"
               variant="contained"
-              to="/Search"
               style={{ height: 50, color: "#dc3545", marginTop: 5 }}
             >
               Search
-            </Button>
+            </button>
           </form>
         </center>
       </section>
