@@ -3,7 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import Item from "../components/Item";
 import "../assets/css/ProductsDisplay.css";
 import "../assets/css/Landing.css";
-import DummyProducts from "../components/Dummy_Products";
+import DummyProducts from "../components/DummyProducts";
 
 function Search() {
   const [items, setItems] = useState(DummyProducts);
