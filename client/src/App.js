@@ -11,7 +11,9 @@ import Signup from "./pages/SignUp";
 import Orders from "./pages/Orders";
 import Users from "./pages/Users";
 import Checkout from "./pages/Checkout";
+import SingleProductPage from "./pages/SingleProductPage";
 import "./assets/css/App.css";
+
 export const CartProduct = createContext();
 
 function App() {
@@ -72,6 +74,9 @@ function App() {
           </Route>
           <Route path="/checkout" exact>
             <Checkout />
+          </Route>
+          <Route path="/product-info" exact>
+            <SingleProductPage />
           </Route>
         </Switch>
       </div>
