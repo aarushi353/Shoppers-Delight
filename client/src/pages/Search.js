@@ -1,45 +1,53 @@
-import React, { useState, Link } from "react";
-import { Row, Col, Button } from "react-bootstrap";
+import React, { useState } from "react";
+import { Row, Col } from "react-bootstrap";
 import Item from "../components/Item";
-import "../components/ProductsDisplay_Style.css";
-import "../components/Landing.css";
-import DummyProducts from "../components/Dummy_Products";
+import "../assets/css/ProductsDisplay.css";
+import "../assets/css/Landing.css";
+import DummyProducts from "../components/DummyProducts";
+
 function Search() {
-  const [productList, setProductsList] = useState("");
   const [items, setItems] = useState(DummyProducts);
-  const filter = (event) => {
-    setProductsList(event.target.value);
-  };
+
   const filterItem = (categoryWiseItem) => {
-    const updatedItems = DummyProducts.filter((setProductsList) => {
-      return setProductsList.category === categoryWiseItem;
+    const updatedItems = DummyProducts.filter((currentElement) => {
+      return currentElement.category === categoryWiseItem;
     });
+
     setItems(updatedItems);
   };
   return (
-    <div className="search-page">
-      <section className="search">
-        <center>
-          <form className="searchform">
-            <input
-              type="text"
-              placeholder="Search"
-              // onChange={(event) => {
-              //   setProductsList(event.target.value);
-              // }}
-            />
-            <Button
-              component={Link}
-              type="submit"
-              variant="contained"
-              to="/Search"
-              style={{ height: 50, color: "#dc3545", marginTop: 5 }}
-            >
-              Search
-            </Button>
-          </form>
-        </center>
-      </section>
+    <div style={{ marginTop: 50 }}>
+      <div className="menu-tabs container">
+        <div className="menu-tab d-flex justify-content-around">
+          <button className="btn btn-danger" onClick={() => filterItem("Men")}>
+            Men
+          </button>
+          <button
+            className="btn btn-danger"
+            onClick={() => filterItem("Women")}
+          >
+            Women
+          </button>
+          <button
+            className="btn btn-danger"
+            onClick={() => filterItem("Accessories")}
+          >
+            Accessories
+          </button>
+          <button
+            className="btn btn-danger"
+            onClick={() => filterItem("Electronics")}
+          >
+            Electronics
+          </button>
+          <button
+            className="btn btn-danger"
+            onClick={() => filterItem("Home & Decor")}
+          >
+            Home & Decor
+          </button>
+        </div>
+      </div>
       <div className="products-section">
         <center>
           <Row>

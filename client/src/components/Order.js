@@ -4,7 +4,7 @@ const Order = () => {
   return (
     <center>
       <Card style={{ marginLeft: 80, marginRight: 80, marginTop: 15 }}>
-        <Card.Header style={{backgroundColor: "#dc3545", color: "white"}}>
+        <Card.Header style={{ backgroundColor: "#dc3545", color: "white" }}>
           <strong>Order #1</strong>
         </Card.Header>
         <ListGroup variant="flush">

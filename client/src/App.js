@@ -1,4 +1,3 @@
-import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import { useState, createContext } from "react";
 import Header from "./components/Header";
@@ -12,6 +11,7 @@ import Signup from "./pages/SignUp";
 import Orders from "./pages/Orders";
 import Users from "./pages/Users";
 import Checkout from "./pages/Checkout";
+import "./assets/css/App.css";
 export const CartProduct = createContext();
 
 function App() {

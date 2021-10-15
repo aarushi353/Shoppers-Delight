@@ -1,6 +1,6 @@
 import React from "react";
 import { Form } from "react-bootstrap";
-import "../components/Buttons.css";
+import "../assets/css/Buttons.css";
 function Adminpage() {
   return (
     <>

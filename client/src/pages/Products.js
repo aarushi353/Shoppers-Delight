@@ -1,6 +1,6 @@
 import React from "react";
 import ProductsDisplay from "../components/ProductsDisplay";
-import "../components/Landing.css";
+import "../assets/css/Landing.css";
 function Product() {
   return (
     <div className="products_dummy">

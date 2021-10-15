@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
-import "./User.css";
+import "../assets/css/User.css";
 const User = () => {
   return (
     <center>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Buttons.css";
+import "../assets/css/Buttons.css";
 function ButtonProduct(props) {
   return (
     <button className="buttonproduct" onClick={props.CartStatusHandler}>

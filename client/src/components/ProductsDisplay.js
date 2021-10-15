@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
-import "./ProductsDisplay_Style.css";
+import "../assets/css/ProductsDisplay.css";
 import Item from "./Item";
-import DummyProducts from "./Dummy_Products";
+import DummyProducts from "./DummyProducts";
+
 const ProductsDisplay = () => {
   const [items, setItems] = useState(DummyProducts);
 

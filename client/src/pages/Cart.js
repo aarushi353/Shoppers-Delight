@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/Landing.css";
+import "../assets/css/Landing.css";
 import { useContext } from "react";
 import { CartProduct } from "../App";
 import Item from "../components/Item";
