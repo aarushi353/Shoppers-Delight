@@ -6,11 +6,12 @@ function SingleProductPage() {
   return (
     <div className="product-info">
       <div className="image">
-        <img src="" alt="" />
+        <center><img src="" alt="" /></center>
       </div>
       <div className="info">
-        <h1 className="underline--magical">
+        <h1><div className="underline--magical">
           <strong>Title</strong>
+          </div>
         </h1>
         <p className="description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
