@@ -1,4 +1,5 @@
 import React from "react";
+import { LinkContainer } from "react-router-bootstrap";
 import { Card } from "react-bootstrap";
 import { useContext } from "react";
 import { CartProduct } from "../App";
@@ -26,9 +27,13 @@ function Item(props) {
       style={{ width: 250, backgroundColor: "#ffff", color: "#012443", borderRadius: 25 }}
       className="my-3 p-3"
     >
+      <LinkContainer to={`/product-info/${props.id}`} >
       <Card.Img variant="top" src={props.image} style={{ height: 230 }} />
+      </LinkContainer>
       <Card.Body>
+      <LinkContainer to={`/product-info/${props.id}`} >
         <Card.Title> {props.title} </Card.Title>
+        </LinkContainer>
         <Card.Text>{props.description}</Card.Text>
         <Card.Title>
           ₹ {props.sellingamount} <del>₹{props.actualprice} </del>
