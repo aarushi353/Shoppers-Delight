@@ -16,7 +16,6 @@ function Item(props) {
         title: props.title,
         sellingamount: props.sellingamount,
         actualamount: props.actualamount,
-        description: props.description,
         image: props.image,
         discount: props.discount,
       });
@@ -34,7 +33,6 @@ function Item(props) {
       <LinkContainer to={`/product-info/${props.id}`} >
         <Card.Title> {props.title} </Card.Title>
         </LinkContainer>
-        <Card.Text>{props.description}</Card.Text>
         <Card.Title>
           ₹ {props.sellingamount} <del>₹{props.actualprice} </del>
           <br />

@@ -22,7 +22,7 @@ const TopProducts = [
   {
     id: "23",
     image:
-      "https://rukminim1.flixcart.com/image/880/1056/k7xnukw0/watch/g/s/t/nbth1791464-tommy-hilfiger-original-imafq24yyenfsggk.jpeg?q=50",
+      "https://rukminim1.flixcart.com/image/580/696/kingqkw0-0/watch/l/e/k/dk11421-7-daniel-klein-original-imafye2gaqdep7cd.jpeg?q=50",
     title: "Analog Watch",
     sellingamount: 6000,
     actualprice: 7500,

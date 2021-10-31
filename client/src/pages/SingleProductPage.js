@@ -1,12 +1,11 @@
 import React from "react";
-import TopProducts from "../components/TopProducts";
-import ButtonProduct from "../components/ButtonProduct";
+import DummyProducts from "../components/DummyProducts";
 import "../assets/css/SingleProduct.css";
+import {useParams} from 'react-router-dom';
 
-
-const SingleProductPage = ({ match }) => {
- const product = TopProducts.find((p) => p.id === match.params.id);
- 
+const SingleProductPage = () => {
+ const { id } =  useParams();
+ const product = DummyProducts.find((product)=>{ return product.id == id})
   return (
     <div className="product-info">
       <div className="image">
@@ -27,12 +26,8 @@ const SingleProductPage = ({ match }) => {
           {product.sellingamount} <del>{product.actualprice}</del>
             
               {" "}
-              <span style={{ color: "green" }}>{product.discount}</span>{" "}</div>
+              <span style={{ color: "green" }}>{product.discount} %</span>{" "}</div>
               <div>
-                  
-              <ButtonProduct
-                text="Add to Cart"
-              />
               </div>
             </div>
           

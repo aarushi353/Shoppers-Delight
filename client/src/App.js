@@ -45,7 +45,6 @@ function App() {
       <div className="App">
         <Router>
           <Header />
-          
             <Route path="/" exact>
               <Home />
             </Route>
