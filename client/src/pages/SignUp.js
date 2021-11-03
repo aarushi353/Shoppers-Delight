@@ -4,22 +4,22 @@ import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
-   const history = useHistory();
+   
    const [email, setEmail] = React.useState();
    const [password, setPassword] = React.useState();
    const [fname,setFirstName]=React.useState();
    const [lname,setLastName]=React.useState();
    const [loading,setLoading] = React.useState();
-  
+
+   const history = useHistory();
+
    const formSubmitHandler =async(e) => {
      setLoading(true);
-
-     e.preventDefault();
 
      await signUp({email, password, fname, lname})
      .then((res)=>{
         setLoading(false);
-        history.push("/products");
+        history.push("/");
      })
      .catch((e) => {
        setLoading(false);
