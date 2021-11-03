@@ -1,8 +1,39 @@
 import React from "react";
-import { Formik } from "formik";
+import {signUp} from "../Api";
+import { useHistory } from "react-router";
+import { Link } from "react-router-dom";
 
-const Signup = () => (
-  <div
+const Signup = () => {
+   
+   const [email, setEmail] = React.useState();
+   const [password, setPassword] = React.useState();
+   const [fname,setFirstName]=React.useState();
+   const [lname,setLastName]=React.useState();
+   const [loading,setLoading] = React.useState();
+
+   const history = useHistory();
+
+   const formSubmitHandler =async(e) => {
+     setLoading(true);
+
+     await signUp({email, password, fname, lname})
+     .then((res)=>{
+        setLoading(false);
+        history.push("/");
+     })
+     .catch((e) => {
+       setLoading(false);
+     });
+   };
+
+   if(loading){
+     return(
+       <span>Loading.....</span>
+     );
+   }
+   else{
+return(
+<div
     style={{
       display: "flex",
       flexDirection: "column",
@@ -11,90 +42,57 @@ const Signup = () => (
     }}
   >
     <center>
-      <h1 className="para">Create Account</h1>
+      <h1 className="para">Welcome Back!</h1>
     </center>
-    <Formik
-      initialValues={{ email: "", password: "" }}
-      validate={(values) => {
-        const errors = {};
-        if (!values.email) {
-          errors.email = "";
-        } else if (
-          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-        ) {
-          errors.email = "Invalid email address";
-        }
-        return errors;
-      }}
-      onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          // alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-        }, 400);
-      }}
-    >
-      {({
-        values,
-        errors,
-        touched,
-        handleChange,
-        handleBlur,
-        handleSubmit,
-        isSubmitting,
-      }) => (
+   
         <form
-          onSubmit={handleSubmit}
           style={{ color: "white", alignSelf: "center", marginTop: 30 }}
         >
           <div style={{ display: "flex", flexDirection: "column" }}>
             <input
-              placeholder="First Name"
+              placeholder="FirstName"
+              htmlFor="text"
               className="mb-3"
-              type="text"
-              name="name"
+              onChange={(e) => setFirstName(e.target.value)}
               style={{ width: 270, backgroundColor: "white" }}
               required
             />
             <input
               placeholder="Last Name"
+              htmlFor="text"
               className="mb-3"
-              type="text"
-              name="name"
+              onChange={(e) => setLastName(e.target.value)}
               style={{ width: 270, backgroundColor: "white" }}
               required
             />
             <input
               placeholder="Email"
+              htmlFor="email"
               className="mb-3"
-              type="email"
-              name="email"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.email}
+              onChange={(e) => setEmail(e.target.value)}
               style={{ width: 270, backgroundColor: "white" }}
               required
             />
-            {errors.email && touched.email && errors.email}
             <input
               placeholder="Password"
-              className="mb-3"
               type="password"
-              name="password"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.password}
+              htmlFor="password"
+              required
+              onChange={(e) => setPassword(e.target.value)}
+              className="mb-3"
               required
               style={{ width: 270, backgroundColor: "white" }}
             />
-            {errors.password && touched.password && errors.password}
-            <button type="submit" disabled={isSubmitting} className="button">
+            <button onClick={formSubmitHandler} className="button">
               Submit
             </button>
+            <div className="text-center mt-4" style={{color: "#dc3545"}}>Already have an account? Click here to <Link to="/login">SignIn</Link></div>
           </div>
         </form>
-      )}
-    </Formik>
   </div>
-);
+   );   
+  }
+  
+  };
 
 export default Signup;

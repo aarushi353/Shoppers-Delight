@@ -1,4 +1,4 @@
-import { Switch, Route } from "react-router-dom";
+import { BrowserRouter as  Router, Route } from "react-router-dom";
 import { useState, createContext } from "react";
 import Header from "./components/Header";
 import Home from "./pages/LandingPage";
@@ -43,42 +43,43 @@ function App() {
   return (
     <CartProduct.Provider value={contextTemplete}>
       <div className="App">
-        <Header />
-        <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/search" exact>
-            <Search />
-          </Route>
-          <Route path="/products" exact>
-            <Product />
-          </Route>
-          <Route path="/cart" exact>
-            <Cart />
-          </Route>
-          <Route path="/login" exact>
-            <Login />
-          </Route>
-          <Route path="/signup" exact>
-            <Signup />
-          </Route>
-          <Route path="/admin" exact>
-            <Adminpage />
-          </Route>
-          <Route path="/admin/orders" exact>
-            <Orders />
-          </Route>
-          <Route path="/admin/users" exact>
-            <Users />
-          </Route>
-          <Route path="/checkout" exact>
-            <Checkout />
-          </Route>
-          <Route path="/product-info" exact>
-            <SingleProductPage />
-          </Route>
-        </Switch>
+        <Router>
+          <Header />
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route path="/search" exact>
+              <Search />
+            </Route>
+            <Route path="/products" exact>
+              <Product />
+            </Route>
+            <Route path="/cart" exact>
+              <Cart />
+            </Route>
+            <Route path="/login" exact>
+              <Login />
+            </Route>
+            <Route path="/signup" exact>
+              <Signup />
+            </Route>
+            <Route path="/admin" exact>
+              <Adminpage />
+            </Route>
+            <Route path="/admin/orders" exact>
+              <Orders />
+            </Route>
+            <Route path="/admin/users" exact>
+              <Users />
+            </Route>
+            <Route path="/checkout" exact>
+              <Checkout />
+            </Route>
+            <Route path="/product-info/:id" exact>
+              <SingleProductPage />
+            </Route>
+        
+        </Router>
       </div>
     </CartProduct.Provider>
   );

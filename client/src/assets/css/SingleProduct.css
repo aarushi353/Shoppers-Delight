@@ -6,15 +6,17 @@
   margin-top: 50px;
 }
 .image {
-  width: 100%;
+  width: 50%;
+ 
+
 }
 .underline--magical {
-  background-image: linear-gradient(120deg, #e73f53 0%, #fa6776 100%);
+  background-image: linear-gradient(120deg, #eb8490 0%, #fa6776 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
   transition: background-size 0.25s ease-in;
-  width: 12%;
+  width: 50%;
 }
 .underline--magical:hover {
   background-size: 100% 88%;
@@ -31,24 +33,32 @@
 }
 
 @media screen and (max-width: 1220px) {
+  .image {
+    width: 100%;
+    
+  
+  }
   .product-info {
     display: flex;
     flex-direction: column;
   }
-  h1 {
-    padding-left: 30px;
+  .info{
+    margin-left: 25%;
+    margin-top: 1%;
   }
-  .description {
-    padding-left: 30px;
-    padding-right: 30px;
+  
+}
+@media screen and (max-width: 900px) {
+
+  .info{
+    margin-left: 20%;
   }
-  .underline--magical {
-    background-image: linear-gradient(120deg, #e73f53 0%, #fa6776 100%);
+  
+}
+@media screen and (max-width: 730px) {
+
+  .info{
+    margin-left: 15%;
   }
-  .order {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-left: 30px;
-  }
+  
 }
