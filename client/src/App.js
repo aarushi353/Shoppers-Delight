@@ -2,7 +2,6 @@ import { BrowserRouter as  Router, Route } from "react-router-dom";
 import { useState, createContext } from "react";
 import Header from "./components/Header";
 import Home from "./pages/LandingPage";
-import Search from "./pages/Search";
 import Product from "./pages/Products";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
@@ -47,9 +46,6 @@ function App() {
           <Header />
             <Route path="/" exact>
               <Home />
-            </Route>
-            <Route path="/search" exact>
-              <Search />
             </Route>
             <Route path="/products" exact>
               <Product />

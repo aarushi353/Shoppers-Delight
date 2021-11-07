@@ -98,17 +98,6 @@ const DummyProducts = [
     description: "5G Smartphone, 6GB RAM + 128GB storage",
   },
   {
-    id: "11",
-    image:
-      "https://rukminim1.flixcart.com/image/416/416/camera/y/x/b/sony-cyber-shot-dsc-w800-point-shoot-original-imadvgz7tgqw8gw8.jpeg?q=70",
-    title: "CyberShot",
-    category: "Electronics",
-    sellingamount: 6999,
-    actualprice: 7790,
-    discount: 10,
-    description: "20.1 MP, 5 Optical Zoom, 13x Digital Zoom, Black",
-  },
-  {
     id: "12",
     image: "https://m.media-amazon.com/images/I/61aDcYQ5QFL._AC_SL1200_.jpg",
     title: "Sony",
@@ -238,17 +227,6 @@ const DummyProducts = [
     actualprice: 1500,
     discount: 55,
     description: "METRONAUT, Graphic Print Men Round Neck Black T-Shirt",
-  },
-  {
-    id: "25",
-    image:
-      "https://rukminim1.flixcart.com/image/416/416/k9stjm80/headphone/e/o/f/rockerz-450-boat-original-imafrgfsan7mpvdf.jpeg?q=70",
-    title: "boAt Rockerz",
-    category: "Electronics",
-    sellingamount: 1199,
-    actualprice: 3990,
-    discount: 69,
-    description: "boAt Rockerz 450 Bluetooth Headset (Luscious Black)",
   },
   {
     id: "27",
