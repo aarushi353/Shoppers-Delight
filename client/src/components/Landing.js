@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
-import { Button } from "@material-ui/core";
-import NavigateNextIcon from "@material-ui/icons/NavigateNext";
-import image from "../assets/images/landing.png";
 import DummyProducts from "./DummyProducts";
 import Item from "./Item";
 import "../assets/css/Landing.css";
-
+import About from "./About";
 function LandingPage() {
   const [name, setName] = useState("");
 
-  const filteredProduct = DummyProducts.filter((filteredProduct) => {return filteredProduct.discount > 60})
+  const filteredProduct = DummyProducts.filter((filteredProduct) => {
+    return filteredProduct.discount > 60;
+  });
   return (
     <div className="Landing">
       <section className="search">
@@ -29,29 +28,7 @@ function LandingPage() {
           </form>
         </center>
       </section>
-      <div className="intro-section">
-        <center>
-          <img src={image} alt="img" />
-        </center>
-        <div>
-          <center>
-            <p class="intro-para">
-              A Few clicks and your market is{" "}
-              <span className="spanText">on the way.</span> That's all it takes.{" "}
-              <Button
-                type="submit"
-                variant="contained"
-                style={{ backgroundColor: "#DC3545", color: "white" }}
-                component={Link}
-                to="/products"
-              >
-                Shop Now
-                <NavigateNextIcon />
-              </Button>
-            </p>
-          </center>
-        </div>
-      </div>
+      <About />
       <center>
         <p className="para">Top Picks</p>
       </center>
