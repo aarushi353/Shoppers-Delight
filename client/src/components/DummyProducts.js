@@ -76,18 +76,6 @@ const DummyProducts = [
     discount: 20,
     description: "Navy Blue Solid Top for Women",
   },
-
-  {
-    id: "8",
-    image:
-      "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13757388/2021/6/23/6eaa0bb9-2083-4e4c-a40b-23b74daee21d1624449627618-Roadster-Women-Shorts-2291624449627129-4.jpg",
-    title: "Roadster",
-    category: "Women",
-    sellingamount: 604,
-    actualprice: 1099,
-    discount: 45,
-    description: "Blue Distressed Loose Fit High-Rise Denim Shorts",
-  },
   {
     id: "9",
     image:
@@ -212,6 +200,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/416/416/kjlrb0w0/computer/a/k/b/asus-original-imafz522ntfk9hwx.jpeg?q=70",
     title: "ASUS VivoBook",
+    category: "Electronics",
     sellingamount: 50990,
     actualprice: 63990,
     discount: 20,
@@ -222,6 +211,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/416/416/camera/y/x/b/sony-cyber-shot-dsc-w800-point-shoot-original-imadvgz7tgqw8gw8.jpeg?q=70",
     title: "SONY CyberShot",
+    category: "Electronics",
     sellingamount: 6999,
     actualprice: 7790,
     discount: 10,
@@ -232,6 +222,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/580/696/kingqkw0-0/watch/l/e/k/dk11421-7-daniel-klein-original-imafye2gaqdep7cd.jpeg?q=50",
     title: "Analog Watch",
+    category: "Accessories",
     sellingamount: 6000,
     actualprice: 7500,
     discount: 20,
@@ -242,6 +233,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/880/1056/kqttg280/t-shirt/3/x/d/m-meppcn012b-metronaut-original-imag4rcnzfqynhs6.jpeg?q=50",
     title: "Black T-Shirt",
+    category: "Men",
     sellingamount: 975,
     actualprice: 1500,
     discount: 55,
@@ -252,21 +244,11 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/416/416/k9stjm80/headphone/e/o/f/rockerz-450-boat-original-imafrgfsan7mpvdf.jpeg?q=70",
     title: "boAt Rockerz",
+    category: "Electronics",
     sellingamount: 1199,
     actualprice: 3990,
     discount: 69,
     description: "boAt Rockerz 450 Bluetooth Headset (Luscious Black)",
-  },
-  {
-    id: "26",
-    image:
-      "https://rukminim1.flixcart.com/image/880/1056/kqttg280/necklace-chain/u/8/r/heartbeat-chain-brado-jewellery-original-imag4qwqp9zgp685.jpeg?q=50",
-    title: "Pendant",
-    category: "Accessories",
-    sellingamount: 179,
-    actualprice: 999,
-    discount: 82,
-    description: "Love Heart Beat Shaped Pendant with Golden Chain",
   },
   {
     id: "27",
@@ -274,6 +256,7 @@ const DummyProducts = [
       "https://rukminim1.flixcart.com/image/580/696/knunf680/t-shirt/u/c/f/s-crp-nvr-viral-trend-original-imag2gy84dsejzax.jpeg?q=50",
     title: "H&M",
     sellingamount: 975,
+    category: "Women",
     actualprice: 1500,
     discount: 55,
     description: "Printed Women Round Neck Green T-Shirt For Woman",

@@ -4,12 +4,14 @@ import { Row, Col } from "react-bootstrap";
 import { Button } from "@material-ui/core";
 import NavigateNextIcon from "@material-ui/icons/NavigateNext";
 import image from "../assets/images/landing.png";
-import TopProducts from "./TopProducts";
+import DummyProducts from "./DummyProducts";
 import Item from "./Item";
 import "../assets/css/Landing.css";
 
 function LandingPage() {
   const [name, setName] = useState("");
+
+  const filteredProduct = DummyProducts.filter((filteredProduct) => {return filteredProduct.discount > 60})
   return (
     <div className="Landing">
       <section className="search">
@@ -56,7 +58,7 @@ function LandingPage() {
       <div className="top-products">
         <center>
           <Row>
-            {TopProducts.map((product) => {
+            {filteredProduct.map((product) => {
               return (
                 <Col key={product.id} sm={12} md={6} lg={4} xl={3}>
                   <Item
