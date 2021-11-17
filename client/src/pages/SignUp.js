@@ -42,7 +42,7 @@ return(
     }}
   >
     <center>
-      <h1 className="para">Welcome Back!</h1>
+      <h1 className="para">Join Now</h1>
     </center>
    
         <form

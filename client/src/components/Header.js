@@ -22,7 +22,6 @@ function Header() {
               Cart <span className="badge">{cartProduct.totalItemsInCart}</span>
             </Nav.Link>
           </Nav>
-
           <Nav>
             <Nav.Link href="/login">LogIn</Nav.Link>
             <Nav.Link eventKey={2} href="/signup">
