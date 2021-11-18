@@ -9,7 +9,15 @@ const productSchema = new mongoose.Schema({
         type:String,
         required:true,
     },
-    amount:{
+    sellingamount:{
+        type:Number,
+        required:true,
+    },
+    actualamount:{
+        type:Number,
+        required:true,
+    },
+    discount:{
         type:Number,
         required:true,
     },
@@ -17,7 +25,7 @@ const productSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    images:[{url:String}],
+    image:[{url:String}],
     isDiscounted:{
         type:Boolean,
         default:false,
