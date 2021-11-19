@@ -12,6 +12,7 @@ import Users from "./pages/Users";
 import Checkout from "./pages/Checkout";
 import SingleProductPage from "./pages/SingleProductPage";
 import "./assets/css/App.css";
+import PageNotFound from "./pages/PageNotFound";
 
 export const CartProduct = createContext();
 
@@ -73,6 +74,9 @@ function App() {
             </Route>
             <Route path="/product-info/:id" exact>
               <SingleProductPage />
+            </Route>
+            <Route path="*">
+              <PageNotFound />
             </Route>
         
         </Router>
