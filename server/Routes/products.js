@@ -25,8 +25,8 @@ router.get('/search',async(req,res)=>{
 
 router.post('/',async(req,res)=>{
     try{
-        const {title,description,amount,category,images}=req.body;
-        const newProduct = new Products({title,description,amount,category,images});
+        const {title,description,sellingamount,actualamount, discount, category,image}=req.body;
+        const newProduct = new Products({title,description,sellingamount,actualamount, discount, category,image});
         await newProduct.save();
     }catch(e){
         res.status(400).json({"error":e.message})
