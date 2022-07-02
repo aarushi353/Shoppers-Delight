@@ -21,6 +21,7 @@ const SingleProductPage = (props) => {
         actualamount: props.actualamount,
         image: props.image,
         discount: props.discount,
+        details: props.details,
       });
     }
   }
@@ -28,35 +29,34 @@ const SingleProductPage = (props) => {
  const product = DummyProducts.find((product)=>{ return product.id == id})
   return (
     <div className="product-info">
-      <div className="image">
-        <center><img src={product.image} /></center>
-      </div>
-      <div className="info">
-        <h1><div className="underline--magical">
-          <strong>{product.title}</strong>
+      <center><div className="image">
+        <img src={product.image} style={{width: "27%", marginTop: "2%"}} />
+      </div></center>
+      <center><div className="info">
+        <h1><div className="spa">
+          <strong><u className="underline" style={{textDecorationColor: "#fa6776"}}>{product.title}</u></strong>
           </div>
         </h1>
-        <p className="description">
+        <center><p className="description">
           {product.description}
-        </p>
-        <br />
+        </p></center>
+        <p className="details-p">{product.details}</p>
         <strong>
         <div className="order">
           <div>
           {product.sellingamount} <del>{product.actualprice}</del>
-            
               {" "}
               <span style={{ color: "green" }}>{product.discount} %</span>{" "}</div>
-              <div>
+              <div style={{marginBottom:20}}>
               <ButtonProduct
-            CartStatusHandler={CartStatusHandler}
-            text={itemIsAddedToCart ? "Remove from Cart" : "Add to Cart"}
-          />
+                CartStatusHandler={CartStatusHandler}
+                text={itemIsAddedToCart ? "Remove from Cart" : "Add to Cart"} 
+              />
               </div>
             </div>
-          
         </strong>
       </div>
+      </center>
     </div>
   );
 }

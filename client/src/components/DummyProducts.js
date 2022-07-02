@@ -9,6 +9,7 @@ const DummyProducts = [
     actualprice: 2299,
     discount: 40,
     description: "Men Navy Blue Slim Fit Solid Casual Shirt",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "2",
@@ -20,6 +21,7 @@ const DummyProducts = [
     actualprice: 4999,
     discount: 40,
     description: "Men Black Self Design Jacket",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "3",
@@ -31,6 +33,7 @@ const DummyProducts = [
     actualprice: 1599,
     discount: 20,
     description: "Charcoal Grey T-shirt for Men",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "4",
@@ -42,6 +45,7 @@ const DummyProducts = [
     actualprice: 699,
     discount: 40,
     description: "Grey Melange T-shirt with Raw Edges",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "5",
@@ -53,6 +57,7 @@ const DummyProducts = [
     actualprice: 1549,
     discount: 62,
     description: "Women Green Printed Fit and Flare Dress",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "6",
@@ -64,6 +69,7 @@ const DummyProducts = [
     actualprice: 1790,
     discount: 20,
     description: "Women Pink Pure Cotton Round Neck T-shirt",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "7",
@@ -75,6 +81,7 @@ const DummyProducts = [
     actualprice: 1495,
     discount: 20,
     description: "Navy Blue Solid Top for Women",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "9",
@@ -86,6 +93,7 @@ const DummyProducts = [
     actualprice: 3990,
     discount: 69,
     description: "boAt Rockerz 450 Bluetooth Headset",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "10",
@@ -96,6 +104,7 @@ const DummyProducts = [
     actualprice: 36762,
     discount: 10,
     description: "5G Smartphone, 6GB RAM + 128GB storage",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "12",
@@ -106,6 +115,7 @@ const DummyProducts = [
     actualprice: 22229,
     discount: 20,
     description: "8 MP Digital Camera (Black)",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "13",
@@ -117,6 +127,7 @@ const DummyProducts = [
     actualprice: 3600,
     discount: 80,
     description: "Brightlyt Vintage Black Hanging Light",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "14",
@@ -128,6 +139,7 @@ const DummyProducts = [
     actualprice: 2999,
     discount: 58,
     description: "Home Decor, Decoration-Set of 6 MDF Wall Shelf ",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "15",
@@ -139,6 +151,7 @@ const DummyProducts = [
     actualprice: 1499,
     discount: 77,
     description: "E Deals Analog 25 cm X 25 cm Wall Clock",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "16",
@@ -150,6 +163,7 @@ const DummyProducts = [
     actualprice: 599,
     discount: 66,
     description: "Miniature Buddha Figurines Showpiece",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "17",
@@ -161,6 +175,7 @@ const DummyProducts = [
     actualprice: 999,
     discount: 82,
     description: "Love Heart Beat Shape Necklace Golden Chain",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "18",
@@ -172,6 +187,7 @@ const DummyProducts = [
     actualprice: 3695,
     discount: 20,
     description: "NN6198QL01 Go Skate 3.0 Watch For Women",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "19",
@@ -183,6 +199,7 @@ const DummyProducts = [
     actualprice: 3999,
     discount: 85,
     description: "Sterling Silver Sterling Silver Bracelet",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "21",
@@ -194,6 +211,7 @@ const DummyProducts = [
     actualprice: 63990,
     discount: 20,
     description: "15 Core i5 10th Gen-(8 GB/1 TB HDD/15.6 inch) laptop",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "22",
@@ -205,6 +223,7 @@ const DummyProducts = [
     actualprice: 7790,
     discount: 10,
     description: "DSC-W800/BC IN5 (20.1 MP, 5 Optical Zoom, 13x Digital Zoom)",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "23",
@@ -216,6 +235,7 @@ const DummyProducts = [
     actualprice: 7500,
     discount: 20,
     description: "TOMMY HILFIGER,TH1791381W Analog Watch - For Men",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "24",
@@ -227,6 +247,7 @@ const DummyProducts = [
     actualprice: 1500,
     discount: 55,
     description: "METRONAUT, Graphic Print Men Round Neck Black T-Shirt",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
   {
     id: "27",
@@ -238,6 +259,7 @@ const DummyProducts = [
     actualprice: 1500,
     discount: 55,
     description: "Printed Women Round Neck Green T-Shirt For Woman",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
 
   {
@@ -249,6 +271,7 @@ const DummyProducts = [
     actualprice: 1500,
     discount: 45,
     description: "Plain Dailywear White Shirt For Men by Allen Solly",
+    details:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis. Aliquam faucibus purus in massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Turpis massa tincidunt dui ut ornare lectus sit. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.",
   },
 ];
 
