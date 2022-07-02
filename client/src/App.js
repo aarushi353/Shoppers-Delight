@@ -1,4 +1,4 @@
-import { BrowserRouter as  Router, Route } from "react-router-dom";
+import { BrowserRouter as  Router, Route, Switch } from "react-router-dom";
 import { useState, createContext } from "react";
 import Header from "./components/Header";
 import Home from "./pages/LandingPage";
@@ -44,10 +44,12 @@ function App() {
     <CartProduct.Provider value={contextTemplete}>
       <div className="App">
         <Router>
+
           <Header />
-            <Route path="/" exact>
+          <Switch>
+            <Route exact path="/">
               <Home />
-            </Route>
+             </Route>
             <Route path="/products" exact>
               <Product />
             </Route>
@@ -75,10 +77,10 @@ function App() {
             <Route path="/product-info/:id" exact>
               <SingleProductPage />
             </Route>
-            <Route path="*">
+            <Route>
               <PageNotFound />
             </Route>
-        
+            </Switch>
         </Router>
       </div>
     </CartProduct.Provider>
