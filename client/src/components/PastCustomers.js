@@ -87,6 +87,8 @@ const Card = ({ img, name, review }) => {
         flexDirection: "column",
         textAlign: "center",
         color: "gray",
+        backgroundColor: "#F0EBE3",
+        borderRadius: 30
       }}
     >
       <Avatar
@@ -95,6 +97,7 @@ const Card = ({ img, name, review }) => {
         style={{
           width: 120,
           height: 120,
+          marginTop:30,
           border: "1px solid lightgray",
           padding: 7,
           marginBottom: 20,
