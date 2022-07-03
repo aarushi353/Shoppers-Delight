@@ -1,7 +1,7 @@
 import React from "react";
 import { addProduct } from "../Api";
 import { useHistory } from "react-router";
-import "../assets/css/Buttons.css";
+import "../assets/css/index.css";
 const Adminpage = () => {
 
   const [loading, setLoading] = React.useState();

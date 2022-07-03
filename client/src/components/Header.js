@@ -1,11 +1,9 @@
 import React from "react";
-import { useContext } from "react";
-import { CartProduct } from "../App";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/Header.css";
 function Header() {
-  const cartProduct = useContext(CartProduct);
+  
   return (
     <Navbar collapseOnSelect expand="lg" bg="danger" variant="dark">
       <Container>
@@ -19,7 +17,7 @@ function Header() {
               Products
             </Nav.Link>
             <Nav.Link href="/cart">
-              Cart <span className="badge">{cartProduct.totalItemsInCart}</span>
+              Cart <span className="badge">0</span>
             </Nav.Link>
           </Nav>
           <Nav>

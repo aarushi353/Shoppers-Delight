@@ -25,8 +25,6 @@ function LandingPage() {
   const filteredProduct = DummyProducts.filter((filteredProduct) => {
     return filteredProduct.discount > 56;
   });
-  let content;
-  
   
   return (
     <div className="Landing">

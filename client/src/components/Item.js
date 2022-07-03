@@ -1,26 +1,9 @@
 import React from "react";
 import { LinkContainer } from "react-router-bootstrap";
 import { Card } from "react-bootstrap";
-import { useContext } from "react";
-import { CartProduct } from "../App";
-import ButtonProduct from "./ButtonProduct.js";
+import "../assets/css/index.css"
 function Item(props) {
-  const cartProduct = useContext(CartProduct);
-  const itemIsAddedToCart = cartProduct.itemIsAddedToCart(props.id);
-  function CartStatusHandler() {
-    if (itemIsAddedToCart) {
-      cartProduct.removeCart(props.id);
-    } else {
-      cartProduct.addToCart({
-        id: props.id,
-        title: props.title,
-        sellingamount: props.sellingamount,
-        actualamount: props.actualamount,
-        image: props.image,
-        discount: props.discount,
-      });
-    }
-  }
+
   return (
     <Card
       style={{ width: 250, backgroundColor: "#ffff", color: "#012443", borderRadius: 25 }}
@@ -39,10 +22,10 @@ function Item(props) {
           <span style={{ color: "green" }}> {props.discount}% Off</span>{" "}
         </Card.Title>
         <center>
-          <ButtonProduct
-            CartStatusHandler={CartStatusHandler}
-            text={itemIsAddedToCart ? "Remove from Cart" : "Add to Cart"}
-          />
+          <button className="buttonproduct">
+          Add to cart
+          </button>
+          
         </center>
       </Card.Body>
     </Card>
