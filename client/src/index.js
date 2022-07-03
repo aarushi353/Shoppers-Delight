@@ -3,13 +3,14 @@ import ReactDOM from "react-dom";
 import "./assets/css/index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-
+import reducer, { initialState } from "./reducer";
+import { StateProvider } from "./store";
 ReactDOM.render(
-  <div className="App">
-  
+  <StateProvider initialState={initialState} reducer={reducer}>
+    <div className="App">
       <App />
-
-  </div>,
+    </div>
+  </StateProvider>,
   document.getElementById("root")
 );
 

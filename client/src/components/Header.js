@@ -2,8 +2,11 @@ import React from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/Header.css";
+import { useStateValue } from "../store";
+
 function Header() {
-  
+  const [{ basket, user }, dispatch] = useStateValue();
+
   return (
     <Navbar collapseOnSelect expand="lg" bg="danger" variant="dark">
       <Container>
@@ -17,7 +20,7 @@ function Header() {
               Products
             </Nav.Link>
             <Nav.Link href="/cart">
-              Cart <span className="badge">0</span>
+              Cart <span className="badge">{basket?.length}</span>
             </Nav.Link>
           </Nav>
           <Nav>

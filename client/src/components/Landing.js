@@ -65,6 +65,8 @@ function LandingPage() {
                     actualprice={product.actualprice}
                     discount={product.discount}
                     id={product.id}
+                    description={product.description}
+                    details={product.details}
                   />
                 </Col>
               );
