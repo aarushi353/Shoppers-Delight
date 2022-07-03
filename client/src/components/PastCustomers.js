@@ -9,35 +9,6 @@ import image2 from "../assets/images/2.jpg";
 import image3 from "../assets/images/3.jpg";
 import image4 from "../assets/images/4.jpg";
 
-const customer =[
-  {
-      'id':'1',
-      'name':'Luci',
-      'picture':'https://unsplash.com/photos/mEZ3PoFGs_k',
-      'review':'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis.'
-  },
-  {
-      'id':'2',
-      'name':'Jack',
-      'picture':'https://unsplash.com/photos/gutlccGLXKI',
-      'review':'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis.'
-
-  },
-  {
-      'id':'3',
-      'name':'Elena',
-      'picture':'https://unsplash.com/photos/jRA-yoDL68M',
-      'review':'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis.'
-
-  },
-  {
-      'id':'4',
-      'name':'Mike',
-      'picture':'https://unsplash.com/photos/em8Xf3vXvvI',
-      'review':'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis.'
-  }
-]
-
 const PreviousBtn = (props) => {
   console.log(props);
   const { className, onClick } = props;
