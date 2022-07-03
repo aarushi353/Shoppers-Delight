@@ -8,9 +8,9 @@ function Cart() {
       <p className="para">
         <center>Cart</center>
       </p>
-      <p style={{ marginTop: 30, color: "#dc3545" }}>
+      <center><p style={{ marginTop: 30, color: "#dc3545" }}>
           You got no items in Cart yet. Start adding some?
-        </p>
+        </p></center>
    
     </>
   );
