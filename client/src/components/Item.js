@@ -27,7 +27,7 @@ function Item(props) {
       className="my-3 p-3"
     >
       <LinkContainer to={`/product-info/${props.id}`} >
-      <Card.Img variant="top" src={props.image} style={{ height: 230 }} />
+      <Card.Img variant="top" src={props.image} style={{ height: 200 }} />
       </LinkContainer>
       <Card.Body>
       <LinkContainer to={`/product-info/${props.id}`} >

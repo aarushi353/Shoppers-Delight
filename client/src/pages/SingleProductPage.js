@@ -26,11 +26,11 @@ const SingleProductPage = (props) => {
     }
   }
  const { id } =  useParams();
- const product = DummyProducts.find((product)=>{ return product.id == id})
+ const product = DummyProducts.find((product)=>{ return product.id === id})
   return (
     <div className="product-info">
       <center><div className="image">
-        <img src={product.image} style={{width: "27%", marginTop: "2%"}} />
+        <img src={product.image} style={{width: "27%", marginTop: "2%"}} alt="pic" />
       </div></center>
       <center><div className="info">
         <h1><div className="spa">

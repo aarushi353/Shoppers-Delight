@@ -4,6 +4,7 @@ import DummyProducts from "./DummyProducts";
 import Item from "./Item";
 import "../assets/css/Landing.css";
 import About from "./About";
+import Testimonial from "./PastCustomers";
 
 function LandingPage() {
 
@@ -22,7 +23,7 @@ function LandingPage() {
   };
 
   const filteredProduct = DummyProducts.filter((filteredProduct) => {
-    return filteredProduct.discount > 60;
+    return filteredProduct.discount > 56;
   });
   let content;
   
@@ -49,6 +50,7 @@ function LandingPage() {
         </center>
       </section>
       <About />
+      <Testimonial />
       <center>
         <p className="para">Top Picks</p>
       </center>
