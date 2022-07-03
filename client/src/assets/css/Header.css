@@ -3,11 +3,23 @@
   color: white;
   border-radius: 9px;
   font-size: medium;
-  margin-top: 10%;
+  margin-left: 2%;
 }
-
-.product {
-  margin-top: 4.5%;
+.links{
+  text-decoration: none;
+  color: white;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.links:hover{
+  color:aliceblue
+}
+.cart{
+  display: flex;
+  flex-direction: row;
+}
+.heads{
+  font-size: large;
 }
 @media (max-width: 991px) {
   .badge {
