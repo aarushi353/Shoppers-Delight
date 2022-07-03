@@ -1,5 +1,4 @@
 import { BrowserRouter as  Router, Route, Switch } from "react-router-dom";
-import { useState, createContext } from "react";
 import Header from "./components/Header";
 import Home from "./pages/LandingPage";
 import Product from "./pages/Products";
@@ -14,38 +13,12 @@ import SingleProductPage from "./pages/SingleProductPage";
 import "./assets/css/App.css";
 import PageNotFound from "./pages/PageNotFound";
 
-export const CartProduct = createContext();
-
 function App() {
-  const [CartItems, setCartItems] = useState([]);
-  function addProductHandler(addedToCart) {
-    setCartItems((prevCartProducts) => {
-      return prevCartProducts.concat(addedToCart);
-    });
-  }
-  function removeProductHandler(productId) {
-    setCartItems((prevCartProduct) => {
-      return prevCartProduct.filter((product) => product.id !== productId);
-    });
-  }
-  function itemIsAddedToCartHandler(productId) {
-    return CartItems.some((product) => product.id === productId);
-  }
-
-  const contextTemplete = {
-    cart: CartItems,
-    totalItemsInCart: CartItems.length,
-    addToCart: addProductHandler,
-    removeCart: removeProductHandler,
-    itemIsAddedToCart: itemIsAddedToCartHandler,
-  };
-
   return (
-    <CartProduct.Provider value={contextTemplete}>
+    <>
       <div className="App">
         <Router>
-
-          <Header />
+        <Header />    
           <Switch>
             <Route exact path="/">
               <Home />
@@ -83,8 +56,7 @@ function App() {
             </Switch>
         </Router>
       </div>
-    </CartProduct.Provider>
+    </>
   );
 }
-export const contextTemplete = {};
 export default App;

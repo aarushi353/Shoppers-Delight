@@ -59,6 +59,7 @@ const ProductsDisplay = () => {
                 sellingamount,
                 actualprice,
                 discount,
+                details,
               } = elements;
               return (
                 <Col key={elements.id} sm={12} md={6} lg={4} xl={3}>
@@ -70,6 +71,7 @@ const ProductsDisplay = () => {
                     discount={discount}
                     description={description}
                     id={id}
+                    details={details}
                   />
                 </Col>
               );

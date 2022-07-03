@@ -1,3 +1,19 @@
 .App {
   background: #f7f6f2;
 }
+.button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+  width: 270px;
+}
+
+.buttonproduct {
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+}

@@ -1,32 +1,36 @@
 import React from "react";
-import { useContext } from "react";
-import { CartProduct } from "../App";
 import { Nav, Navbar, Container } from "react-bootstrap";
+import {Link} from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/Header.css";
+import { useStateValue } from "../store";
+
 function Header() {
-  const cartProduct = useContext(CartProduct);
+  const [{ basket, user }, dispatch] = useStateValue();
+
   return (
     <Navbar collapseOnSelect expand="lg" bg="danger" variant="dark">
       <Container>
-        <Navbar.Brand href="/">
+        <Link className="links heads" to="/">
           <strong>ShoppersDelight</strong>
-        </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/products" className="product">
+            <div style={{marginTop: 10, display:"flex", flexDirection: "row"}}>
+            <Link to="/products" className="links product">
               Products
-            </Nav.Link>
-            <Nav.Link href="/cart">
-              Cart <span className="badge">{cartProduct.totalItemsInCart}</span>
-            </Nav.Link>
+            </Link>
+            <Link to="/cart" className="links cart" >
+              Cart <span className="badge">{basket?.length}</span>
+            </Link>
+            </div>
           </Nav>
           <Nav>
-            <Nav.Link href="/login">LogIn</Nav.Link>
-            <Nav.Link eventKey={2} href="/signup">
+            <Link to="/login" className="links">LogIn</Link>
+            <Link eventKey={2} to="/signup" className="links">
               SignUp
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
