@@ -8,19 +8,19 @@ import Testimonial from "./PastCustomers";
 
 function LandingPage() {
 
-  const valueInputRef = useRef();
-  const [value, setValue] = useState("");
+  // const valueInputRef = useRef();
+  // const [value, setValue] = useState("");
 
-  const valueChangeHandler = (event) => {
-    setValue(event.target.value);
-  };
-  const formSubmitHandler = (event) => {
-    event.preventDefault();
-    console.log(value);
-    const enteredValue = valueInputRef.current.value;
-    console.log(enteredValue);
-    setValue("");
-  };
+  // const valueChangeHandler = (event) => {
+  //   setValue(event.target.value);
+  // };
+  // const formSubmitHandler = (event) => {
+  //   event.preventDefault();
+  //   console.log(value);
+  //   const enteredValue = valueInputRef.current.value;
+  //   console.log(enteredValue);
+  //   setValue("");
+  // };
 
   const filteredProduct = DummyProducts.filter((filteredProduct) => {
     return filteredProduct.discount > 56;
@@ -28,7 +28,7 @@ function LandingPage() {
   
   return (
     <div className="Landing">
-      <section className="search">
+      {/* <section className="search">
         <center>
           <form className="searchform">
             <label
@@ -46,7 +46,7 @@ function LandingPage() {
             </button>
           </form>
         </center>
-      </section>
+      </section> */}
       <About />
       <Testimonial />
       <center>
@@ -61,6 +61,7 @@ function LandingPage() {
                   <Item
                     title={product.title}
                     image={product.image}
+                    category={product.category}
                     sellingamount={product.sellingamount}
                     actualprice={product.actualprice}
                     discount={product.discount}
