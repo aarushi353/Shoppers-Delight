@@ -7,29 +7,19 @@ import EmptyView from "../components/Products/EmptyView";
 import DummyProducts from "../components/Products/DummyProducts";
 
 function Product() {
-  // const [selectedPrice, setSelectedPrice] = useState([1000, 5000]);
+  const [selectedPrice, setSelectedPrice] = useState([0, 7000]);
   const [list, setList] = useState(DummyProducts);
   const [resultsFound, setResultsFound] = useState(true);
   const [searchInput, setSearchInput] = useState('');
 
-  // const handleChangePrice = (event, value) => {
-  //   setSelectedPrice(value);
-  // };
+  const handleChangePrice = (event, value) => {
+    setSelectedPrice(value);
+  };
 
   const applyFilters = () => {
     let updatedList = DummyProducts;
 
-    // Cuisine Filter
-    // const cuisinesChecked = cuisines
-    //   .filter((item) => item.checked)
-    //   .map((item) => item.label.toLowerCase());
-
-    // if (cuisinesChecked.length) {
-    //   updatedList = updatedList.filter((item) =>
-    //     cuisinesChecked.includes(item.cuisine)
-    //   );
-    // }
-
+    
     // Search Filter
     if (searchInput) {
       updatedList = updatedList.filter(
@@ -40,12 +30,12 @@ function Product() {
     }
 
     // Price Filter
-    // const minPrice = selectedPrice[0];
-    // const maxPrice = selectedPrice[1];
+    const minPrice = selectedPrice[0];
+    const maxPrice = selectedPrice[1];
 
-    // updatedList = updatedList.filter(
-    //   (item) => item.price >= minPrice && item.price <= maxPrice
-    // );
+    updatedList = updatedList.filter(
+      (item) => item.sellingamount >= minPrice && item.sellingamount <= maxPrice
+    );
 
     setList(updatedList);
 
@@ -54,7 +44,7 @@ function Product() {
 
   useEffect(() => {
     applyFilters();
-  }, [ searchInput ]);
+  }, [ searchInput, selectedPrice ]);
   return (
     <div className="products">
       <SearchBar
@@ -63,7 +53,10 @@ function Product() {
       />
       <div className="home_panelList-wrap">
       <div className="home_panel-wrap" >
-      <SidePanel />
+      <SidePanel
+      selectedPrice={selectedPrice}
+      changePrice={handleChangePrice}
+      />
       </div>
       <div  className='home_list-wrap'>
           {resultsFound ? <ProductsDisplay list={list} /> : <EmptyView />}
