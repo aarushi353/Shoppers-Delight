@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import { Row, Col } from "react-bootstrap";
-import DummyProducts from "./DummyProducts";
-import Item from "./Item";
-import "../assets/css/Landing.css";
+import DummyProducts from "../Products/DummyProducts";
+import Item from "../Products/Item";
+import "../../assets/css/Landing.css";
 import About from "./About";
 import Testimonial from "./PastCustomers";
 

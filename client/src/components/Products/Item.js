@@ -1,10 +1,10 @@
 import React from "react";
 import { LinkContainer } from "react-router-bootstrap";
 import { Card } from "react-bootstrap";
-import "../assets/css/index.css"
-import { useStateValue } from "../store";
+import "../../assets/css/index.css"
+import { useStateValue } from "../../store";
 
-function Item({id, title, image, sellingamount, actualprice, discount, description, details}) {
+function Item({id, title, image, sellingamount, actualprice, discount, description, details, category}) {
   const [{ basket }, dispatch] = useStateValue();
   const addToBasket = () => {
     // dispatch the item into the data layer
@@ -18,7 +18,8 @@ function Item({id, title, image, sellingamount, actualprice, discount, descripti
         actualprice: actualprice,
         discount: discount,
         description: description,
-        details: details
+        details: details,
+        category: category
       },
     });
   };

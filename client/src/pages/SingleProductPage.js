@@ -1,12 +1,30 @@
 import React from "react";
-import DummyProducts from "../components/DummyProducts";
+import DummyProducts from "../components/Products/DummyProducts";
 import "../assets/css/SingleProduct.css";
 import "../assets/css/index.css";
 import {useParams} from 'react-router-dom';
+import { useStateValue } from "../store";
 
 
 const SingleProductPage = (props) => {
- 
+  const [{ basket }, dispatch] = useStateValue();
+  const addToBasket = () => {
+    // dispatch the item into the data layer
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        id: props.id,
+        title: props.title,
+        image: props.image,
+        sellingamount: props.sellingamount,
+        actualprice: props.actualprice,
+        discount: props.discount,
+        description: props.description,
+        details: props.details,
+        category: props.category
+      },
+    });
+  };
  const { id } =  useParams();
  const product = DummyProducts.find((product)=>{ return product.id === id})
   return (
@@ -30,7 +48,7 @@ const SingleProductPage = (props) => {
               {" "}
               <span style={{ color: "green" }}>{product.discount} %</span>{" "}</div>
               <div style={{marginBottom:20}}>
-              <button className="buttonproduct"> Add to cart </button>
+              <button className="buttonproduct" onClick={addToBasket}> Add to cart </button>
               </div>
             </div>
         </strong>

@@ -2,8 +2,8 @@ import React from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import {Link} from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../assets/css/Header.css";
-import { useStateValue } from "../store";
+import "../../assets/css/Header.css";
+import { useStateValue } from "../../store";
 
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();

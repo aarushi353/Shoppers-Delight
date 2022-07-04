@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
 import NavigateNextIcon from "@material-ui/icons/NavigateNext";
-import image from "../assets/images/landing.png";
-import "../assets/css/Landing.css";
+import image from "../../assets/images/landing.png";
+import "../../assets/css/Landing.css";
 
 function About() {
   return (
