@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import "../../assets/css/SidePanel.css";
 
 function SidePanel() {
   return (
-    <div>SidePanel</div>
+    <div>
+      
+    </div>
   )
 }
 

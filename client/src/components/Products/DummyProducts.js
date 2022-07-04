@@ -3,7 +3,7 @@ const DummyProducts = [
     id: "1",
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12422532/2020/9/15/652136c8-86c0-499c-a1e3-ea9461fb14811600168275068-WROGN-Men-Shirts-8301600168273193-1.jpg",
-    title: "Shirt",
+    title: "Formal Shirt",
     category: "Men",
     sellingamount: 1379,
     actualprice: 2299,
@@ -15,7 +15,7 @@ const DummyProducts = [
     id: "2",
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10187087/2019/12/23/b729ed82-e140-4a16-932e-4c7ade1cacca1577100011583-WROGN-Men-Navy-Blue-Self-Design-Jacket-6271577100009656-1.jpg",
-    title: "Jacket",
+    title: "Denim Jacket",
     category: "Men",
     sellingamount: 2999,
     actualprice: 4999,
@@ -27,7 +27,7 @@ const DummyProducts = [
     id: "3",
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14504984/2021/7/22/84cbb774-e7ab-4eab-8309-585ebcc9982f1626949908034-ADIDAS-Men-Tshirts-5191626949907499-1.jpg",
-    title: "ADIDAS",
+    title: "Gym Tee",
     category: "Men",
     sellingamount: 1279,
     actualprice: 1599,
@@ -39,7 +39,7 @@ const DummyProducts = [
     id: "4",
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1824340/2017/8/3/11501764560431-Roadster-Men-Grey-Melange-Solid-Round-Neck-T-shirt-3291501764560241-2.jpg",
-    title: "Roadster",
+    title: "Casual Tshirt",
     category: "Men",
     sellingamount: 419,
     actualprice: 699,
@@ -241,7 +241,7 @@ const DummyProducts = [
     id: "24",
     image:
       "https://rukminim1.flixcart.com/image/880/1056/kqttg280/t-shirt/3/x/d/m-meppcn012b-metronaut-original-imag4rcnzfqynhs6.jpeg?q=50",
-    title: "Black T-Shirt",
+    title: "Home Shirts",
     category: "Men",
     sellingamount: 975,
     actualprice: 1500,

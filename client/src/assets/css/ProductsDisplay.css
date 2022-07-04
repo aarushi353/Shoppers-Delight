@@ -8,6 +8,11 @@
 .product-page{
   overflow-x: hidden;
 }
+.list-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
 .home_panelList-wrap,
 .home_panel-wrap,
 .home_list-wrap {

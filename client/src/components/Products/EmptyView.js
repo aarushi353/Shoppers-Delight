@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import '../../assets/css/EmptyView.css';
 
-function EmptyView() {
-  return (
-    <div>EmptyView</div>
-  )
-}
+const EmptyView = () => (
+  <div className='emptyView-wrap'>
+    <p>No product Found</p>
+  </div>
+);
 
-export default EmptyView
+export default EmptyView;

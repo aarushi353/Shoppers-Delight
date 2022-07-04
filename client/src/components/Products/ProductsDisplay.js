@@ -1,15 +1,14 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Item from "./Item";
-import DummyProducts from "./DummyProducts";
 import "../../assets/css/ProductsDisplay.css";
-const ProductsDisplay = () => {  
+const ProductsDisplay = ({list}) => {  
   return (
     <div className="product-page">
       <div className="products-section">
-        <center>
+        <>
           <Row>
-            {DummyProducts.map((elements) => {
+            {list.map((elements) => {
               const {
                 id,
                 title,
@@ -36,7 +35,7 @@ const ProductsDisplay = () => {
               );
             })}
           </Row>
-        </center>
+        </>
       </div>
     </div>
   );
