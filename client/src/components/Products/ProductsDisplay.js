@@ -13,6 +13,7 @@ const ProductsDisplay = ({list}) => {
                 id,
                 title,
                 image,
+                category,
                 description,
                 sellingamount,
                 actualprice,
@@ -23,6 +24,7 @@ const ProductsDisplay = ({list}) => {
                 <Col key={elements.id} >
                   <Item
                     title={title}
+                    category={category}
                     image={image}
                     sellingamount={sellingamount}
                     actualprice={actualprice}

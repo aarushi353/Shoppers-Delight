@@ -49,11 +49,11 @@ function Product() {
     const categoryChecked = category
       .filter((item) => item.checked)
       .map((item) => item.label.toLowerCase());
-
     if (categoryChecked.length) {
       updatedList = updatedList.filter((item) =>
         categoryChecked.includes(item.category)
       );
+      
     }
 
     // Price Filter
@@ -65,13 +65,13 @@ function Product() {
     );
 
     setList(updatedList);
-
     !updatedList.length ? setResultsFound(false) : setResultsFound(true);
   };
 
   useEffect(() => {
     applyFilters();
   }, [ searchInput, selectedPrice, category ]);
+
   return (
     <div className="products">
       <SearchBar

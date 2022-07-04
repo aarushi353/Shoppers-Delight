@@ -7,7 +7,7 @@ const SidePanel = ({selectedPrice, changePrice, category, changeChecked}) => {
   return (
     <div>
       <div className='input-group'>
-      <p className='label' style={{marginBottom:20}}>Cuisine</p>
+      <p className='label' style={{marginBottom:20}}>Categories</p>
       <br />
       <br />
       <br />

@@ -4,7 +4,7 @@ const DummyProducts = [
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12422532/2020/9/15/652136c8-86c0-499c-a1e3-ea9461fb14811600168275068-WROGN-Men-Shirts-8301600168273193-1.jpg",
     title: "Formal Shirt",
-    category: "Boys and Men",
+    category: 'Boys and Men',
     sellingamount: 1379,
     actualprice: 2299,
     discount: 40,
@@ -16,7 +16,7 @@ const DummyProducts = [
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10187087/2019/12/23/b729ed82-e140-4a16-932e-4c7ade1cacca1577100011583-WROGN-Men-Navy-Blue-Self-Design-Jacket-6271577100009656-1.jpg",
     title: "Denim Jacket",
-    category: "Boys and Men",
+    category: 'Boys and Men',
     sellingamount: 2999,
     actualprice: 4999,
     discount: 40,
@@ -28,7 +28,7 @@ const DummyProducts = [
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14504984/2021/7/22/84cbb774-e7ab-4eab-8309-585ebcc9982f1626949908034-ADIDAS-Men-Tshirts-5191626949907499-1.jpg",
     title: "Gym Tee",
-    category: "Boys and Men",
+    category: 'Boys and Men',
     sellingamount: 1279,
     actualprice: 1599,
     discount: 20,
@@ -40,7 +40,7 @@ const DummyProducts = [
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1824340/2017/8/3/11501764560431-Roadster-Men-Grey-Melange-Solid-Round-Neck-T-shirt-3291501764560241-2.jpg",
     title: "Casual Tshirt",
-    category: "Boys and Men",
+    category: 'Boys and Men',
     sellingamount: 419,
     actualprice: 699,
     discount: 40,
@@ -52,7 +52,7 @@ const DummyProducts = [
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8240149/2019/3/7/b002f1f0-5798-4950-acd0-e5065d9d55c51551955451550-Tokyo-Talkies-Women-Green-Printed-Fit-and-Flare-Dress-454155-1.jpg",
     title: "Tokyo Talkies",
-    category: "Girls and Women",
+    category: 'Girls and Women',
     sellingamount: 588,
     actualprice: 1549,
     discount: 62,
@@ -64,7 +64,7 @@ const DummyProducts = [
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13944156/2021/4/3/ff6807b2-546a-4b74-aff3-a7be9046bc7c1617430594564BlazersMANGOWomenTopsMANGOWomenTopsMANGOWomenTopsMANGOWomenT1.jpg",
     title: "MANGO",
-    category: "Girls and Women",
+    category: 'Girls and Women',
     sellingamount: 1432,
     actualprice: 1790,
     discount: 20,
@@ -76,7 +76,7 @@ const DummyProducts = [
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/5/15/d5adc9f2-38c6-424c-8735-079907a648c01557918496131-1.jpg",
     title: "FableStreet",
-    category: "Girls and Women",
+    category: 'Girls and Women',
     sellingamount: 1196,
     actualprice: 1495,
     discount: 20,
@@ -88,7 +88,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/416/416/k9stjm80/headphone/e/o/f/rockerz-450-boat-original-imafrgfsan7mpvdf.jpeg?q=70",
     title: "boAt Rockerz",
-    category: "Electronics",
+    category: 'Electronics',
     sellingamount: 1199,
     actualprice: 3990,
     discount: 69,
@@ -99,7 +99,7 @@ const DummyProducts = [
     id: "10",
     image: "https://m.media-amazon.com/images/I/718R1ii+iBS._AC_SL1500_.jpg",
     title: "OnePlus",
-    category: "Electronics",
+    category: 'Electronics',
     sellingamount: 33085,
     actualprice: 36762,
     discount: 10,
@@ -110,7 +110,7 @@ const DummyProducts = [
     id: "12",
     image: "https://m.media-amazon.com/images/I/61aDcYQ5QFL._AC_SL1200_.jpg",
     title: "Sony",
-    category: "Electronics",
+    category: 'Electronics',
     sellingamount: 17783,
     actualprice: 22229,
     discount: 20,
@@ -122,7 +122,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/416/416/kp5sya80/ceiling-lamp/w/s/d/0-hl76-linear-brightlyt-original-imag3gkmgepmw5r7.jpeg?q=70",
     title: "Ceiling Lamp",
-    category: "Home & Decor",
+    category: 'Home & Decor',
     sellingamount: 699,
     actualprice: 3600,
     discount: 80,
@@ -134,7 +134,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/416/416/ki0loy80-0/rack-shelf/f/w/t/dop81-domestic-point-original-imafxvtggjybdbha.jpeg?q=70",
     title: "Wall Shelves",
-    category: "Home & Decor",
+    category: 'Home & Decor',
     sellingamount: 1239,
     actualprice: 2999,
     discount: 58,
@@ -146,7 +146,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/416/416/koono280/wall-clock/k/v/5/printed-wall-clock-10-inches-round-shaped-designer-wall-clock-original-imag33gpsgfdt7tv.jpeg?q=70",
     title: "Wall Clock",
-    category: "Home & Decor",
+    category: 'Home & Decor',
     sellingamount: 339,
     actualprice: 1499,
     discount: 77,
@@ -158,7 +158,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/416/416/k5vcya80/showpiece-figurine/d/m/c/monk-miniature-buddha-pinkcity-xpress-original-imafe33xngxaup5d.jpeg?q=70",
     title: "Set of 4 Monk",
-    category: "Home & Decor",
+    category: 'Home & Decor',
     sellingamount: 199,
     actualprice: 599,
     discount: 66,
@@ -170,7 +170,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/880/1056/kqttg280/necklace-chain/u/8/r/heartbeat-chain-brado-jewellery-original-imag4qwqp9zgp685.jpeg?q=50",
     title: "Pendant",
-    category: "Accessories",
+    category: 'Accessories',
     sellingamount: 179,
     actualprice: 999,
     discount: 82,
@@ -182,7 +182,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/880/1056/kn97te80/watch/h/l/u/6198ql01-fastrack-original-imagfyzc4zdbygp7.jpeg?q=50",
     title: "AnalogWatch",
-    category: "Accessories",
+    category: 'Accessories',
     sellingamount: 2956,
     actualprice: 3695,
     discount: 20,
@@ -194,7 +194,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/880/1056/k5zn9u80/bangle-bracelet-armlet/p/2/f/free-size-1-ssbr1076-silver-shoppee-original-imafzjtzn33jhhh7.jpeg?q=50",
     title: "Bracelet",
-    category: "Accessories",
+    category: 'Accessories',
     sellingamount: 575,
     actualprice: 3999,
     discount: 85,
@@ -206,7 +206,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/416/416/kjlrb0w0/computer/a/k/b/asus-original-imafz522ntfk9hwx.jpeg?q=70",
     title: "ASUS VivoBook",
-    category: "Electronics",
+    category: 'Electronics',
     sellingamount: 50990,
     actualprice: 63990,
     discount: 20,
@@ -218,7 +218,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/416/416/camera/y/x/b/sony-cyber-shot-dsc-w800-point-shoot-original-imadvgz7tgqw8gw8.jpeg?q=70",
     title: "SONY CyberShot",
-    category: "Electronics",
+    category: 'Electronics',
     sellingamount: 6999,
     actualprice: 7790,
     discount: 10,
@@ -230,7 +230,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/580/696/kingqkw0-0/watch/l/e/k/dk11421-7-daniel-klein-original-imafye2gaqdep7cd.jpeg?q=50",
     title: "Analog Watch",
-    category: "Accessories",
+    category: 'Accessories',
     sellingamount: 6000,
     actualprice: 7500,
     discount: 20,
@@ -242,7 +242,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/880/1056/kqttg280/t-shirt/3/x/d/m-meppcn012b-metronaut-original-imag4rcnzfqynhs6.jpeg?q=50",
     title: "Home Shirts",
-    category: "Boys and Men",
+    category: 'Boys and Men',
     sellingamount: 975,
     actualprice: 1500,
     discount: 55,
@@ -255,7 +255,7 @@ const DummyProducts = [
       "https://rukminim1.flixcart.com/image/580/696/knunf680/t-shirt/u/c/f/s-crp-nvr-viral-trend-original-imag2gy84dsejzax.jpeg?q=50",
     title: "H&M",
     sellingamount: 975,
-    category: "Girls and Women",
+    category: 'Girls and Women',
     actualprice: 1500,
     discount: 55,
     description: "Printed Women Round Neck Green T-Shirt For Woman",
@@ -267,6 +267,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/880/1056/kfoapow0-0/shirt/b/w/n/l-white-5-jai-textiles-original-imafw2gqhcpfgygn.jpeg?q=50",
     title: "Allen Solly",
+    category: 'Boys and Men',
     sellingamount: 825,
     actualprice: 1500,
     discount: 45,
