@@ -7,7 +7,6 @@ const Users = () => {
         <Card style={{ marginTop: 15 }} className="user-card">
           <Card.Body>
             <Card.Title>User's Name</Card.Title>
-           
             <Card.Text>
               abc@gmail.com
               <br /> +9111111111
