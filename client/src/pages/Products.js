@@ -12,8 +12,24 @@ function Product() {
   const [resultsFound, setResultsFound] = useState(true);
   const [searchInput, setSearchInput] = useState('');
 
+  const [category, setCategory] = useState([
+    { id: 1, checked: false, label: 'Boys and Men' },
+    { id: 2, checked: false, label: 'Girls and Women' },
+    { id: 3, checked: false, label: 'Electronics' },
+    { id: 4, checked: false, label: 'Home & Decor' },
+    { id: 5, checked: false, label: 'Accessories' },
+  ]);
+
   const handleChangePrice = (event, value) => {
     setSelectedPrice(value);
+  };
+
+  const handleChangeChecked = (id) => {
+    const categoryStateList = category;
+    const changeCheckedCategory = categoryStateList.map((item) =>
+      item.id === id ? { ...item, checked: !item.checked } : item
+    );
+    setCategory(changeCheckedCategory);
   };
 
   const applyFilters = () => {
@@ -26,6 +42,17 @@ function Product() {
         (item) =>
           item.title.toLowerCase().search(searchInput.toLowerCase().trim()) !==
           -1
+      );
+    }
+
+    // Category Filter
+    const categoryChecked = category
+      .filter((item) => item.checked)
+      .map((item) => item.label.toLowerCase());
+
+    if (categoryChecked.length) {
+      updatedList = updatedList.filter((item) =>
+        categoryChecked.includes(item.category)
       );
     }
 
@@ -44,7 +71,7 @@ function Product() {
 
   useEffect(() => {
     applyFilters();
-  }, [ searchInput, selectedPrice ]);
+  }, [ searchInput, selectedPrice, category ]);
   return (
     <div className="products">
       <SearchBar
@@ -56,7 +83,10 @@ function Product() {
       <SidePanel
       selectedPrice={selectedPrice}
       changePrice={handleChangePrice}
+      changeChecked={handleChangeChecked}
+      category={category}
       />
+
       </div>
       <div  className='home_list-wrap'>
           {resultsFound ? <ProductsDisplay list={list} /> : <EmptyView />}

@@ -4,7 +4,7 @@ const DummyProducts = [
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12422532/2020/9/15/652136c8-86c0-499c-a1e3-ea9461fb14811600168275068-WROGN-Men-Shirts-8301600168273193-1.jpg",
     title: "Formal Shirt",
-    category: "Men",
+    category: "Boys and Men",
     sellingamount: 1379,
     actualprice: 2299,
     discount: 40,
@@ -16,7 +16,7 @@ const DummyProducts = [
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10187087/2019/12/23/b729ed82-e140-4a16-932e-4c7ade1cacca1577100011583-WROGN-Men-Navy-Blue-Self-Design-Jacket-6271577100009656-1.jpg",
     title: "Denim Jacket",
-    category: "Men",
+    category: "Boys and Men",
     sellingamount: 2999,
     actualprice: 4999,
     discount: 40,
@@ -28,7 +28,7 @@ const DummyProducts = [
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14504984/2021/7/22/84cbb774-e7ab-4eab-8309-585ebcc9982f1626949908034-ADIDAS-Men-Tshirts-5191626949907499-1.jpg",
     title: "Gym Tee",
-    category: "Men",
+    category: "Boys and Men",
     sellingamount: 1279,
     actualprice: 1599,
     discount: 20,
@@ -40,7 +40,7 @@ const DummyProducts = [
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1824340/2017/8/3/11501764560431-Roadster-Men-Grey-Melange-Solid-Round-Neck-T-shirt-3291501764560241-2.jpg",
     title: "Casual Tshirt",
-    category: "Men",
+    category: "Boys and Men",
     sellingamount: 419,
     actualprice: 699,
     discount: 40,
@@ -52,7 +52,7 @@ const DummyProducts = [
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8240149/2019/3/7/b002f1f0-5798-4950-acd0-e5065d9d55c51551955451550-Tokyo-Talkies-Women-Green-Printed-Fit-and-Flare-Dress-454155-1.jpg",
     title: "Tokyo Talkies",
-    category: "Women",
+    category: "Girls and Women",
     sellingamount: 588,
     actualprice: 1549,
     discount: 62,
@@ -64,7 +64,7 @@ const DummyProducts = [
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13944156/2021/4/3/ff6807b2-546a-4b74-aff3-a7be9046bc7c1617430594564BlazersMANGOWomenTopsMANGOWomenTopsMANGOWomenTopsMANGOWomenT1.jpg",
     title: "MANGO",
-    category: "Women",
+    category: "Girls and Women",
     sellingamount: 1432,
     actualprice: 1790,
     discount: 20,
@@ -76,7 +76,7 @@ const DummyProducts = [
     image:
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/5/15/d5adc9f2-38c6-424c-8735-079907a648c01557918496131-1.jpg",
     title: "FableStreet",
-    category: "Women",
+    category: "Girls and Women",
     sellingamount: 1196,
     actualprice: 1495,
     discount: 20,
@@ -242,7 +242,7 @@ const DummyProducts = [
     image:
       "https://rukminim1.flixcart.com/image/880/1056/kqttg280/t-shirt/3/x/d/m-meppcn012b-metronaut-original-imag4rcnzfqynhs6.jpeg?q=50",
     title: "Home Shirts",
-    category: "Men",
+    category: "Boys and Men",
     sellingamount: 975,
     actualprice: 1500,
     discount: 55,
@@ -255,7 +255,7 @@ const DummyProducts = [
       "https://rukminim1.flixcart.com/image/580/696/knunf680/t-shirt/u/c/f/s-crp-nvr-viral-trend-original-imag2gy84dsejzax.jpeg?q=50",
     title: "H&M",
     sellingamount: 975,
-    category: "Women",
+    category: "Girls and Women",
     actualprice: 1500,
     discount: 55,
     description: "Printed Women Round Neck Green T-Shirt For Woman",
