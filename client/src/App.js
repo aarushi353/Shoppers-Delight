@@ -1,5 +1,5 @@
 import { BrowserRouter as  Router, Route, Switch } from "react-router-dom";
-import Header from "./components/Header";
+import Header from "./components/Navigation/Header";
 import Home from "./pages/LandingPage";
 import Product from "./pages/Products";
 import Cart from "./pages/Cart";

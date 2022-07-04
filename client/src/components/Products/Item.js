@@ -1,8 +1,8 @@
 import React from "react";
 import { LinkContainer } from "react-router-bootstrap";
 import { Card } from "react-bootstrap";
-import "../assets/css/index.css"
-import { useStateValue } from "../store";
+import "../../assets/css/index.css"
+import { useStateValue } from "../../store";
 
 function Item({id, title, image, sellingamount, actualprice, discount, description, details}) {
   const [{ basket }, dispatch] = useStateValue();

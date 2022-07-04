@@ -1,5 +1,5 @@
 import React from "react";
-import DummyProducts from "../components/DummyProducts";
+import DummyProducts from "../components/Products/DummyProducts";
 import "../assets/css/SingleProduct.css";
 import "../assets/css/index.css";
 import {useParams} from 'react-router-dom';

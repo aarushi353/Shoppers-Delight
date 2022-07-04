@@ -1,5 +1,5 @@
 import React from "react";
-import ProductsDisplay from "../components/ProductsDisplay";
+import ProductsDisplay from "../components/Products/ProductsDisplay";
 import "../assets/css/Landing.css";
 function Product() {
   return (

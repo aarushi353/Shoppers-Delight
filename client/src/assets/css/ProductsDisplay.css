@@ -3,41 +3,11 @@
 .products_dummy {
   font-family: "Josefin Sans", sans-serif;
 }
-
-.btn-primary {
-  background-color: #5455d7;
-  outline: none;
-  border: none;
-  transition: all 0.3s ease-in-out;
-  margin-left: 1%;
-}
-
-.btn-primary:hover {
-  background-color: #2626c1;
-  outline: none;
-  border: none;
-}
-
-.btn-warning:hover {
-  background-color: black;
-  color: whitesmoke;
-  outline: none;
+.product-page{
+  overflow-x: hidden;
 }
 .para {
   font-size: 230%;
   font-family: "Merienda", cursive;
   padding-top: 3%;
-}
-.products-section {
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-@media (max-width: 450px) {
-  .btn-primary {
-    width: 25%;
-    font-size: small;
-    padding-left: 1%;
-    padding-right: 1%;
-  }
 }
